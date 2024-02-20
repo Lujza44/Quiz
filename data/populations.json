@@ -1,0 +1,285 @@
+{
+    "theme": "Population Sizes of European Countries",
+    "description": "In each question you will be asked to write the number of people living in a given country.",
+    "questions": 
+
+[
+  {
+    "text": "How many people live in Albania?",
+    "correctAnswer": [
+      "3 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Andorra?",
+    "correctAnswer": [
+      "80 000"
+    ]
+  },
+  {
+    "text": "How many people live in Austria?",
+    "correctAnswer": [
+      "9 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Belarus?",
+    "correctAnswer": [
+      "9 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Belgium?",
+    "correctAnswer": [
+      "11 500 000"
+    ]
+  },
+  {
+    "text": "How many people live in Bosnia and Herzegovina?",
+    "correctAnswer": [
+      "3 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Bulgaria?",
+    "correctAnswer": [
+      "6 500 000"
+    ]
+  },
+  {
+    "text": "How many people live in Croatia?",
+    "correctAnswer": [
+      "4 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Cyprus?",
+    "correctAnswer": [
+      "1 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Czech Republic?",
+    "correctAnswer": [
+      "10 500 000"
+    ]
+  },
+  {
+    "text": "How many people live in Denmark?",
+    "correctAnswer": [
+      "6 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Estonia?",
+    "correctAnswer": [
+      "1 500 000"
+    ]
+  },
+  {
+    "text": "How many people live in Finland?",
+    "correctAnswer": [
+      "5 500 000"
+    ]
+  },
+  {
+    "text": "How many people live in France?",
+    "correctAnswer": [
+      "68 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Germany?",
+    "correctAnswer": [
+      "84 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Greece?",
+    "correctAnswer": [
+      "10 500 000"
+    ]
+  },
+  {
+    "text": "How many people live in Hungary?",
+    "correctAnswer": [
+      "9 500 000"
+    ]
+  },
+  {
+    "text": "How many people live in Iceland?",
+    "correctAnswer": [
+      "400 000"
+    ]
+  },
+  {
+    "text": "How many people live in Ireland?",
+    "correctAnswer": [
+      "5 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Italy?",
+    "correctAnswer": [
+      "60 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Kosovo?",
+    "correctAnswer": [
+      "2 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Latvia?",
+    "correctAnswer": [
+      "2 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Liechtenstein?",
+    "correctAnswer": [
+      "40 000"
+    ]
+  },
+  {
+    "text": "How many people live in Lithuania?",
+    "correctAnswer": [
+      "3 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Luxembourg?",
+    "correctAnswer": [
+      "650 000"
+    ]
+  },
+  {
+    "text": "How many people live in Malta?",
+    "correctAnswer": [
+      "500 000"
+    ]
+  },
+  {
+    "text": "How many people live in Moldova?",
+    "correctAnswer": [
+      "2 500 000"
+    ]
+  },
+  {
+    "text": "How many people live in Monaco?",
+    "correctAnswer": [
+      "37 000"
+    ]
+  },
+  {
+    "text": "How many people live in Montenegro?",
+    "correctAnswer": [
+      "600 000"
+    ]
+  },
+  {
+    "text": "How many people live in Netherlands?",
+    "correctAnswer": [
+      "18 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in North Macedonia?",
+    "correctAnswer": [
+      "2 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Norway?",
+    "correctAnswer": [
+      "5 500 000"
+    ]
+  },
+  {
+    "text": "How many people live in Poland?",
+    "correctAnswer": [
+      "38 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Portugal?",
+    "correctAnswer": [
+      "10 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Romania?",
+    "correctAnswer": [
+      "19 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Russia?",
+    "correctAnswer": [
+      "145 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in San Marino?",
+    "correctAnswer": [
+      "34 000"
+    ]
+  },
+  {
+    "text": "How many people live in Serbia?",
+    "correctAnswer": [
+      "7 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Slovakia?",
+    "correctAnswer": [
+      "5 500 000"
+    ]
+  },
+  {
+    "text": "How many people live in Slovenia?",
+    "correctAnswer": [
+      "2 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Spain?",
+    "correctAnswer": [
+      "47 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Sweden?",
+    "correctAnswer": [
+      "10 500 000"
+    ]
+  },
+  {
+    "text": "How many people live in Switzerland?",
+    "correctAnswer": [
+      "8 500 000"
+    ]
+  },
+  {
+    "text": "How many people live in Ukraine?",
+    "correctAnswer": [
+      "44 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in United Kingdom?",
+    "correctAnswer": [
+      "68 000 000"
+    ]
+  },
+  {
+    "text": "How many people live in Vatican City State?",
+    "correctAnswer": [
+      "800"
+    ]
+  }
+]
+
+}
