@@ -4,21 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/JsonReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Theme.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/single-choice/bioinf-alg.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/single-choice/latin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/text/bioinf.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/text/morse.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/text/networking.json" afterDir="false" />
+    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Add new json files">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/MultipleChoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/SingleChoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/TextAnswer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/TestPrep.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/QuizPrep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/bioinf.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/networking.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/populations.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/QuizPrep.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/QuizPrep.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708446714150</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add new json files">
+      <option name="closed" value="true" />
+      <created>1708708407960</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708708407960</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,6 +146,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Add new json files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new json files" />
   </component>
 </project>

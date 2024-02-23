@@ -21,6 +21,20 @@ public class QuizPrep {
         System.out.println("Enter 3 for Populations of European Countries");
         topic = getUserChoice(scanner, 3);
 
+        // triedy TextAnswer, SingleChoice a Multiple choice by obsluhovali urcity typ testu,
+        // volali by sa s konkretnym suborom (cestou k nemu) a modom studia (precvicovanie / testovanie)
+
+        switch (topic) {
+            case 1 -> TextAnswer(bioinf.json, mode);
+            case 2 -> TextAnswer(morse.json, mode);
+            case 3 -> TextAnswer(networking.json, mode);
+            case 4 -> SingleChoice(bioinf_alg.json, mode);
+            case 5 -> SingleChoice(latin.json, mode);
+            case 6 -> SingleChoice(TODO, mode);
+            case 7 -> MultipleChoice(TODO, mode);
+            case 8 -> MultipleChoice(TODO, mode);
+            case 9 -> MultipleChoice(TODO, mode);
+        }
     }
 
     private int getUserChoice(Scanner scanner, int maxOption) {
