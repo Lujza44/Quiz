@@ -1,0 +1,182 @@
+{
+    "theme": "Networking Acronyms",
+    "description": "In each question you will be asked to write the explanation of a given acronym.",
+    "questions": [
+        {
+            "text": "What does AP stand for?",
+            "correctAnswer": "Access Point"
+        },
+        {
+            "text": "What does ARP stand for?",
+            "correctAnswer": "Address Resolution Protocol"
+        },
+        {
+            "text": "What does BGP stand for?",
+            "correctAnswer": "Border Gateway Protocol"
+        },
+        {
+            "text": "What does CDN stand for?",
+            "correctAnswer": "Content Delivery Network"
+        },
+        {
+            "text": "What does CIDR stand for?",
+            "correctAnswer": "Classless Inter-Domain Routing"
+        },
+        {
+            "text": "What does DHCP stand for?",
+            "correctAnswer": "Dynamic Host Configuration Protocol"
+        },
+        {
+            "text": "What does DNS stand for?",
+            "correctAnswer": "Domain Name System"
+        },
+        {
+            "text": "What does DSCP stand for?",
+            "correctAnswer": "Differentiated Services Code Point"
+        },
+        {
+            "text": "What does FTP stand for?",
+            "correctAnswer": "File Transfer Protocol"
+        },
+        {
+            "text": "What does HTTP stand for?",
+            "correctAnswer": "Hypertext Transfer Protocol"
+        },
+        {
+            "text": "What does HTTPS stand for?",
+            "correctAnswer": "Hypertext Transfer Protocol Secure"
+        },
+        {
+            "text": "What does ICMP stand for?",
+            "correctAnswer": "Internet Control Message Protocol"
+        },
+        {
+            "text": "What does IGMP stand for?",
+            "correctAnswer": "Internet Group Management Protocol"
+        },
+        {
+            "text": "What does IP stand for?",
+            "correctAnswer": "Internet Protocol"
+        },
+        {
+            "text": "What does IPv4 stand for?",
+            "correctAnswer": "Internet Protocol version 4"
+        },
+        {
+            "text": "What does IPv6 stand for?",
+            "correctAnswer": "Internet Protocol version 6"
+        },
+        {
+            "text": "What does ISP stand for?",
+            "correctAnswer": "Internet Service Provider"
+        },
+        {
+            "text": "What does LAN stand for?",
+            "correctAnswer": "Local Area Network"
+        },
+        {
+            "text": "What does LACP stand for?",
+            "correctAnswer": "Link Aggregation Control Protocol"
+        },
+        {
+            "text": "What does LDAP stand for?",
+            "correctAnswer": "Lightweight Directory Access Protocol"
+        },
+        {
+            "text": "What does MAC stand for?",
+            "correctAnswer": "Media Access Control"
+        },
+        {
+            "text": "What does MLS stand for?",
+            "correctAnswer": "Multiprotocol Label Switching"
+        },
+        {
+            "text": "What does MTU stand for?",
+            "correctAnswer": "Maximum Transmission Unit"
+        },
+        {
+            "text": "What does NAT stand for?",
+            "correctAnswer": "Network Address Translation"
+        },
+        {
+            "text": "What does OSPF stand for?",
+            "correctAnswer": "Open Shortest Path First"
+        },
+        {
+            "text": "What does POP stand for?",
+            "correctAnswer": "Post Office Protocol"
+        },
+        {
+            "text": "What does QoS stand for?",
+            "correctAnswer": "Quality of Service"
+        },
+        {
+            "text": "What does RDP stand for?",
+            "correctAnswer": "Remote Desktop Protocol"
+        },
+        {
+            "text": "What does RIP stand for?",
+            "correctAnswer": "Routing Information Protocol"
+        },
+        {
+            "text": "What does SSH stand for?",
+            "correctAnswer": "Secure Shell"
+        },
+        {
+            "text": "What does SMTP stand for?",
+            "correctAnswer": "Simple Mail Transfer Protocol"
+        },
+        {
+            "text": "What does SSI stand for?",
+            "correctAnswer": "Service Set Identifier"
+        },
+        {
+            "text": "What does STP stand for?",
+            "correctAnswer": "Spanning Tree Protocol"
+        },
+        {
+            "text": "What does TCP stand for?",
+            "correctAnswer": "Transmission Control Protocol"
+        },
+        {
+            "text": "What does TFTP stand for?",
+            "correctAnswer": "Trivial File Transfer Protocol"
+        },
+        {
+            "text": "What does TLS stand for?",
+            "correctAnswer": "Transport Layer Security"
+        },
+        {
+            "text": "What does UDP stand for?",
+            "correctAnswer": "User Datagram Protocol"
+        },
+        {
+            "text": "What does URL stand for?",
+            "correctAnswer": "Uniform Resource Locator"
+        },
+        {
+            "text": "What does VLAN stand for?",
+            "correctAnswer": "Virtual Local Area Network"
+        },
+        {
+            "text": "What does VPN stand for?",
+            "correctAnswer": "Virtual Private Network"
+        },
+        {
+            "text": "What does VRRP stand for?",
+            "correctAnswer": "Virtual Router Redundancy Protocol"
+        },
+        {
+            "text": "What does WAN stand for?",
+            "correctAnswer": "Wide Area Network"
+        },
+        {
+            "text": "What does WAP stand for?",
+            "correctAnswer": "Wireless Access Point"
+        },
+        {
+            "text": "What does WPA stand for?",
+            "correctAnswer": "Wi-Fi Protected Access"
+        }
+    ]
+}

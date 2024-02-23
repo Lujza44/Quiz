@@ -1,0 +1,47 @@
+{
+    "theme": "Latin Phrases",
+    "description": "In each question you will be asked to choose the right explanation of a given latin phrase.",
+    "questions": [
+      {
+        "text": "What does in vitro mean?",
+        "choices": [
+          "outside a living organism",
+          "inside a living organism",
+          "in the original place",
+          "by computer simulation"
+        ],
+        "correctAnswer": "outside a living organism"
+      },
+      {
+        "text": "What does in vivo mean?",
+        "choices": [
+          "outside a living organism",
+          "inside a living organism",
+          "in the original place",
+          "by computer simulation"
+        ],
+        "correctAnswer": "inside a living organism"
+      },
+      {
+        "text": "What does in situ mean?",
+        "choices": [
+          "outside a living organism",
+          "inside a living organism",
+          "in the original place",
+          "by computer simulation"
+        ],
+        "correctAnswer": "in the original place"
+      },
+      {
+        "text": "What does in silico mean?",
+        "choices": [
+          "outside a living organism",
+          "inside a living organism",
+          "in the original place",
+          "by computer simulation"
+        ],
+        "correctAnswer": "by computer simulation"
+      }
+    ]
+  }
+  

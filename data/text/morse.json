@@ -1,0 +1,136 @@
+{
+  "theme": "Morse Code",
+  "description": "In each question you will be asked to translate the given letter to Morse code.",
+  "questions": [
+    {
+      "text": "A",
+      "correctAnswer": ".-"
+    },
+    
+    {
+      "text": "B",
+      "correctAnswer": "-..."
+    },
+    
+    {
+      "text": "C",
+      "correctAnswer": "-.-."
+    },
+    
+    {
+      "text": "D",
+      "correctAnswer": "-.."
+    },
+    
+    {
+      "text": "E",
+      "correctAnswer": "."
+    },
+    
+    {
+      "text": "F",
+      "correctAnswer": "..-."
+    },
+    
+    {
+      "text": "G",
+      "correctAnswer": "--."
+    },
+    
+    {
+      "text": "H",
+      "correctAnswer": "...."
+    },
+    
+    {
+      "text": "I",
+      "correctAnswer": ".."
+    },
+    
+    {
+      "text": "J",
+      "correctAnswer": ".---"
+    },
+    
+    {
+      "text": "K",
+      "correctAnswer": "-.-"
+    },
+    
+    {
+      "text": "L",
+      "correctAnswer": ".-.."
+    },
+    
+    {
+      "text": "M",
+      "correctAnswer": "--"
+    },
+    
+    {
+      "text": "N",
+      "correctAnswer": "-."
+    },
+    
+    {
+      "text": "O",
+      "correctAnswer": "---"
+    },
+    
+    {
+      "text": "P",
+      "correctAnswer": ".--."
+    },
+    
+    {
+      "text": "Q",
+      "correctAnswer": "--.-"
+    },
+    
+    {
+      "text": "R",
+      "correctAnswer": ".-."
+    },
+    
+    {
+      "text": "S",
+      "correctAnswer": "..."
+    },
+    
+    {
+      "text": "T",
+      "correctAnswer": "-"
+    },
+    
+    {
+      "text": "U",
+      "correctAnswer": "..-"
+    },
+    
+    {
+      "text": "V",
+      "correctAnswer": "...-"
+    },
+    
+    {
+      "text": "W",
+      "correctAnswer": ".--"
+    },
+    
+    {
+      "text": "X",
+      "correctAnswer": "-..-"
+    },
+    
+    {
+      "text": "Y",
+      "correctAnswer": "-.--"
+    },
+    
+    {
+      "text": "Z",
+      "correctAnswer": "--.."
+    }
+ 
+ ]
+}

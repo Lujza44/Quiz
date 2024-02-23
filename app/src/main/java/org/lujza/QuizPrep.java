@@ -2,12 +2,12 @@ package org.lujza;
 
 import java.util.Scanner;
 
-public class TestPrep {
+public class QuizPrep {
 
     private int mode;
     private int topic;
 
-    public void startTest() {
+    public void startQuiz() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Welcome to the application, that will help you prepare for your exams!");
@@ -32,10 +32,10 @@ public class TestPrep {
                 if (choice >= 1 && choice <= maxOption) {
                     break;
                 } else {
-                    System.out.println("Invalid input. Please enter a valid number: ");
+                    System.out.println("Invalid input. Please enter a valid number:");
                 }
             } catch (NumberFormatException e) {
-                System.out.println("Invalid input. Please enter a valid number: ");
+                System.out.println("Invalid input. Please enter a valid number:");
             }
         }
         return choice;
