@@ -7,8 +7,8 @@ import java.util.Scanner;
 
 public class QuizPrep {
     private Scanner scanner = new Scanner(System.in);
-    private int mode;
-    private int topic;
+    private String mode;
+    private String topic;
     private JsonReader jsonReader = new JsonReader("data");
 
     public void startQuiz() throws IOException {
@@ -22,7 +22,7 @@ public class QuizPrep {
 
         topic = prompt(themes);
 
-        Theme theme = themes.get(topic);
+        Theme theme = themes.get(Integer.parseInt(topic));
 
         List<Question> questions = theme.getQuestions();
         Collections.shuffle(questions);
@@ -32,24 +32,29 @@ public class QuizPrep {
         }
     }
 
-    private int prompt(Question question) {
+    private String prompt(Question question) {
         System.out.println(question.getText());
         List<String> allChoices = question.getAllChoices();
-        Collections.shuffle(allChoices);
-        for (int i = 0; i < allChoices.size(); i++) {
-            System.out.println(String.format("%s. %s", i, allChoices.get(i)));
+        if (question.isTextInput()) {
+
+        } else {
+            Collections.shuffle(allChoices);
+            for (int i = 0; i < allChoices.size(); i++) {
+                System.out.println(String.format("%s. %s", i, allChoices.get(i)));
+            }
         }
+
         return getUserChoice(allChoices.size()-1);
     }
 
-    private int prompt(List<Theme> themes) {
+    private String prompt(List<Theme> themes) {
         for (int i = 0; i < themes.size(); i++) {
             System.out.println(String.format("%s. %s", i, themes.get(i).getName()));
         }
         return getUserChoice(themes.size()-1);
     }
 
-    private int prompt(String text, int maxOption) {
+    private String prompt(String text, int maxOption) {
         System.out.println(text);
         return getUserChoice(maxOption);
     }
