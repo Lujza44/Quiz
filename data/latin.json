@@ -1,5 +1,5 @@
 {
-    "theme": "Latin Phrases",
+    "name": "Latin Phrases",
     "description": "In each question you will be asked to choose the right explanation of a given latin phrase.",
     "questions": [
       {
@@ -10,7 +10,7 @@
           "in the original place",
           "by computer simulation"
         ],
-        "correctAnswer": "outside a living organism"
+        "correctAnswers": ["outside a living organism"]
       },
       {
         "text": "What does in vivo mean?",
@@ -20,7 +20,7 @@
           "in the original place",
           "by computer simulation"
         ],
-        "correctAnswer": "inside a living organism"
+        "correctAnswers": ["inside a living organism"]
       },
       {
         "text": "What does in situ mean?",
@@ -30,7 +30,7 @@
           "in the original place",
           "by computer simulation"
         ],
-        "correctAnswer": "in the original place"
+        "correctAnswers": ["in the original place"]
       },
       {
         "text": "What does in silico mean?",
@@ -40,7 +40,7 @@
           "in the original place",
           "by computer simulation"
         ],
-        "correctAnswer": "by computer simulation"
+        "correctAnswers": ["by computer simulation"]
       }
     ]
   }

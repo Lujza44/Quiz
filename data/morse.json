@@ -1,136 +1,135 @@
 {
-  "theme": "Morse Code",
+  "name": "Morse Code",
   "description": "In each question you will be asked to translate the given letter to Morse code.",
   "questions": [
     {
       "text": "A",
-      "correctAnswer": ".-"
+      "correctAnswers": [".-"]
     },
     
     {
       "text": "B",
-      "correctAnswer": "-..."
+      "correctAnswers": ["-..."]
     },
     
     {
       "text": "C",
-      "correctAnswer": "-.-."
+      "correctAnswers": ["-.-."]
     },
     
     {
       "text": "D",
-      "correctAnswer": "-.."
+      "correctAnswers": ["-.."]
     },
     
     {
       "text": "E",
-      "correctAnswer": "."
+      "correctAnswers": ["."]
     },
     
     {
       "text": "F",
-      "correctAnswer": "..-."
+      "correctAnswers": ["..-."]
     },
     
     {
       "text": "G",
-      "correctAnswer": "--."
+      "correctAnswers": ["--."]
     },
     
     {
       "text": "H",
-      "correctAnswer": "...."
+      "correctAnswers": ["...."]
     },
     
     {
       "text": "I",
-      "correctAnswer": ".."
+      "correctAnswers": [".."]
     },
     
     {
       "text": "J",
-      "correctAnswer": ".---"
+      "correctAnswers": [".---"]
     },
     
     {
       "text": "K",
-      "correctAnswer": "-.-"
+      "correctAnswers": ["-.-"]
     },
     
     {
       "text": "L",
-      "correctAnswer": ".-.."
+      "correctAnswers": [".-.."]
     },
     
     {
       "text": "M",
-      "correctAnswer": "--"
+      "correctAnswers": ["--"]
     },
     
     {
       "text": "N",
-      "correctAnswer": "-."
+      "correctAnswers": ["-."]
     },
     
     {
       "text": "O",
-      "correctAnswer": "---"
+      "correctAnswers": ["---"]
     },
     
     {
       "text": "P",
-      "correctAnswer": ".--."
+      "correctAnswers": [".--."]
     },
     
     {
       "text": "Q",
-      "correctAnswer": "--.-"
+      "correctAnswers": ["--.-"]
     },
     
     {
       "text": "R",
-      "correctAnswer": ".-."
+      "correctAnswers": [".-."]
     },
     
     {
       "text": "S",
-      "correctAnswer": "..."
+      "correctAnswers": ["..."]
     },
     
     {
       "text": "T",
-      "correctAnswer": "-"
+      "correctAnswers": ["-"]
     },
     
     {
       "text": "U",
-      "correctAnswer": "..-"
+      "correctAnswers": ["..-"]
     },
     
     {
       "text": "V",
-      "correctAnswer": "...-"
+      "correctAnswers": ["...-"]
     },
     
     {
       "text": "W",
-      "correctAnswer": ".--"
+      "correctAnswers": [".--"]
     },
     
     {
       "text": "X",
-      "correctAnswer": "-..-"
+      "correctAnswers": ["-..-"]
     },
     
     {
       "text": "Y",
-      "correctAnswer": "-.--"
+      "correctAnswers": ["-.--"]
     },
     
     {
       "text": "Z",
-      "correctAnswer": "--.."
+      "correctAnswers": ["--.."]
     }
- 
  ]
 }

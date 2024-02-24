@@ -3,8 +3,27 @@ import java.util.ArrayList;
 import java.util.List;
 public class Question {
     private String text;
-    private List<String> choices = new ArrayList<>();
+    private List<String> wrongChoices = new ArrayList<>();
     private List<String> correctAnswers;
+
+    public String getText() {
+        return text;
+    }
+
+    public List<String> getWrongChoices() {
+        return wrongChoices;
+    }
+
+    public List<String> getCorrectAnswers() {
+        return correctAnswers;
+    }
+
+    public List<String> getAllChoices() {
+        List<String> allChoices = new ArrayList<>(correctAnswers);
+        allChoices.addAll(wrongChoices);
+        return allChoices;
+    }
+
     // Constructors, getters, and setters
     // toto mozno pre tvoju osobnu kontrolu, aby si nemusela kontrolovat manualne tvoj JSON,
     // ci mas spravne zadefinovanu otazku
@@ -15,12 +34,12 @@ public class Question {
         return true;
     }
     public boolean isTextInput() {
-        return choices.isEmpty() && correctAnswers.size() == 1;
+        return wrongChoices.isEmpty() && correctAnswers.size() == 1;
     }
     public boolean isSingleAnswer() {
-        return !choices.isEmpty() && correctAnswers.size() == 1;
+        return !wrongChoices.isEmpty() && correctAnswers.size() == 1;
     }
     public boolean isMultipleAnswer() {
-        return !choices.isEmpty() && correctAnswers.size() > 1;
+        return !wrongChoices.isEmpty() && correctAnswers.size() > 1;
     }
 }
