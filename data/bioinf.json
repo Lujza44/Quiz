@@ -1,201 +1,201 @@
 {
   "name": "Bioinformatic Acronyms",
-  "description": "In each question you will be asked to write the explanation of a given acronym.",
+  "description": "Each question consists of one bioinformatics acronym. Your task is to write an explanation of the acronym.",
   "questions": [
     {
-      "text": "What does ENA stand for?",
+      "text": "ENA",
       "correctAnswers": ["European Nucleotide Archive"]
     },
     {
-      "text": "What does PDB stand for?",
+      "text": "PDB",
       "correctAnswers": ["Protein Data Bank"]
     },
     {
-      "text": "What does DDBJ stand for?",
+      "text": "DDBJ",
       "correctAnswers": ["DNA Data Bank of Japan"]
     },
     {
-      "text": "What does InterPro stand for?",
+      "text": "InterPro",
       "correctAnswers": ["Integrated Resource of Protein Domains"]
     },
     {
-      "text": "What does UniProt stand for?",
+      "text": "UniProt",
       "correctAnswers": ["Universal Protein Resource"]
     },
     {
-      "text": "What does EMBL stand for?",
+      "text": "EMBL",
       "correctAnswers": ["European Molecular Biology Laboratory"]
     },
     {
-      "text": "What does EBI stand for?",
+      "text": "EBI",
       "correctAnswers": ["European Bioinformatics Institute"]
     },
     {
-      "text": "What does NCBI stand for?",
+      "text": "NCBI",
       "correctAnswers": ["National Centre for Biotechnology Information"]
     },
     {
-      "text": "What does PFAM stand for?",
+      "text": "PFAM",
       "correctAnswers": ["Protein Families"]
     },
     {
-      "text": "What does ProSite stand for?",
+      "text": "ProSite",
       "correctAnswers": ["Protein Site Motifs"]
     },
     {
-      "text": "What does RefSeq stand for?",
+      "text": "RefSeq",
       "correctAnswers": ["Reference Sequence"]
     },
     {
-      "text": "What does INSDC stand for?",
+      "text": "INSDC",
       "correctAnswers": ["International Nucleotide Sequence Database Collaboration"]
     },
     {
-      "text": "What does CDS stand for?",
+      "text": "CDS",
       "correctAnswers": ["coding sequence"]
     },
     {
-      "text": "What does FASTA stand for?",
+      "text": "FASTA",
       "correctAnswers": ["Fast-All"]
     },
     {
-      "text": "What does VCF stand for?",
+      "text": "VCF",
       "correctAnswers": ["Variant Call Format"]
     },
     {
-      "text": "What does PIR stand for?",
+      "text": "PIR",
       "correctAnswers": ["Protein Information Resource"]
     },
     {
-      "text": "What does SIB stand for?",
+      "text": "SIB",
       "correctAnswers": ["Swiss Institute of Bioinformatics"]
     },
     {
-      "text": "What does PRO stand for?",
+      "text": "PRO",
       "correctAnswers": ["Protein Ontology"]
     },
     {
-      "text": "What does PSD stand for?",
+      "text": "PSD",
       "correctAnswers": ["Protein Sequence Database"]
     },
     {
-      "text": "What does SCOP stand for?",
+      "text": "SCOP",
       "correctAnswers": ["Structural Classification of Proteins"]
     },
     {
-      "text": "What does CATH stand for?",
+      "text": "CATH",
       "correctAnswers": ["Class, Architecture, Topology and Homologous superfamily"]
     },
     {
-      "text": "What does mmCIF stand for?",
+      "text": "mmCIF",
       "correctAnswers": ["Macromolecular Crystallographic Information File"]
     },
     {
-      "text": "What does LCS stand for?",
+      "text": "LCS",
       "correctAnswers": ["longest common subsequence"]
     },
     {
-      "text": "What does PAM stand for?",
+      "text": "PAM",
       "correctAnswers": ["Point/Percent Accepted Mutation"]
     },
     {
-      "text": "What does BLOSUM stand for?",
+      "text": "BLOSUM",
       "correctAnswers": ["Blocks Substitution Matrix"]
     },
     {
-      "text": "What does MSA stand for?",
+      "text": "MSA",
       "correctAnswers": ["Multiple Sequence Alignment"]
     },
     {
-      "text": "What does T-COFFEE stand for?",
+      "text": "T-COFFEE",
       "correctAnswers": ["Tree-based Consistency Objective Function for Alignment Evaluation"]
     },
     {
-      "text": "What does MAFFT stand for?",
+      "text": "MAFFT",
       "correctAnswers": ["Multiple Alignment using Fast Fourier Transform"]
     },
     {
-      "text": "What does MUSCLE stand for?",
+      "text": "MUSCLE",
       "correctAnswers": ["Multiple Sequence Comparison by Log-Expectation"]
     },
     {
-      "text": "What does HSP stand for?",
+      "text": "HSP",
       "correctAnswers": ["high scoring pair"]
     },
     {
-      "text": "What does BLAST stand for?",
+      "text": "BLAST",
       "correctAnswers": ["Basic Local Alignment Search Tool"]
     },
     {
-      "text": "What does BLAT stand for?",
+      "text": "BLAT",
       "correctAnswers": ["BLAST-Like Alignment Tool"]
     },
     {
-      "text": "What does SSAHA stand for?",
+      "text": "SSAHA",
       "correctAnswers": ["Sequence Search and Alignment by Hashing Algorithm"]
     },
     {
-      "text": "What does HMM stand for?",
+      "text": "HMM",
       "correctAnswers": ["Hidden Markov Models"]
     },
     {
-      "text": "What does FSA stand for?",
+      "text": "FSA",
       "correctAnswers": ["Final State Automata"]
     },
     {
-      "text": "What does PSSM stand for?",
+      "text": "PSSM",
       "correctAnswers": ["position specific scoring matrix"]
     },
     {
-      "text": "What does PSI-BLAST stand for?",
+      "text": "PSI-BLAST",
       "correctAnswers": ["Position Specific Iterated BLAST"]
     },
     {
-      "text": "What does CDD stand for?",
+      "text": "CDD",
       "correctAnswers": ["Conserved Domains Database"]
     },
     {
-      "text": "What does UPGMA stand for?",
+      "text": "UPGMA",
       "correctAnswers": ["Unweighted Pair Group Method Using Arithmetic Average"]
     },
     {
-      "text": "What does RMSD stand for?",
+      "text": "RMSD",
       "correctAnswers": ["Root Mean Square Deviation"]
     },
     {
-      "text": "What does DALI stand for?",
+      "text": "DALI",
       "correctAnswers": ["Distance Matrix Alignment"]
     },
     {
-      "text": "What does CE stand for?",
+      "text": "CE",
       "correctAnswers": ["Combinatorial Extension"]
     },
     {
-      "text": "What does AFP stand for?",
+      "text": "AFP",
       "correctAnswers": ["Alignment Fragment Pair"]
     },
     {
-      "text": "What does SSAP stand for?",
+      "text": "SSAP",
       "correctAnswers": ["Sequential Structure Alignment Program"]
     },
     {
-      "text": "What does MAMMOTH stand for?",
+      "text": "MAMMOTH",
       "correctAnswers": ["Matching Molecular Models Obtained from Theory"]
     },
     {
-      "text": "What does FATCAT stand for?",
+      "text": "FATCAT",
       "correctAnswers": ["Flexible Structure Alignment by Chaining AFPs with Twists"]
     },
     {
-      "text": "What does NMR stand for?",
+      "text": "NMR",
       "correctAnswers": ["Nuclear Magnetic Resonance"]
     },
     {
-      "text": "What does GDT-TS stand for?",
+      "text": "GDT-TS",
       "correctAnswers": ["Global Distance Test - Total Score"]
     },
     {
-      "text": "What does EM stand for?",
+      "text": "EM",
       "correctAnswers": ["Electron Microscopy"]
     }
   ]

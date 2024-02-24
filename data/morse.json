@@ -1,6 +1,6 @@
 {
   "name": "Morse Code",
-  "description": "In each question you will be asked to translate the given letter to Morse code.",
+  "description": "Each question consists of one letter. Your task is to write the given letter in Morse code.",
   "questions": [
     {
       "text": "A",

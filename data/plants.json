@@ -1,0 +1,149 @@
+{
+  "name": "Bioinformatic Algorithms",
+  "description": "Each question consists of a term from the molecular genetics of plants. Your task is to select all the options that apply to the given term. Zero to all options can be correct.",
+  "questions": [
+    {
+      "text": "de novo methylation",
+      "wrongChoices": [
+        "is not possible in plants",
+        "is induced by histone modifications"
+      ],
+      "correctAnswers": [
+        "is induced by DNA binding proteins (transcription factors) that bind to a specific sequence",
+        "is induced by sRNA that lead SUV4 to methylate certain sequence of DNA"
+      ]
+    },
+    {
+      "text": "CpG context of DNA methylation",
+      "wrongChoices": [
+        "is the same as GpC context"
+      ],
+      "correctAnswers": [
+        "could be frozen coincidence (one symmetric context is enough)",
+        "leads to a lot of CpG islands in plant genomes",
+        "methyltransferases can work only with CpG, not GpC"
+      ]
+    },
+    {
+      "text": "CMT3 and SUVH4 positive feedback loop",
+      "wrongChoices": [
+        "CMT3 methylates first",
+        "SUVH4 methylates first"
+      ],
+      "correctAnswers": [
+        "none of the enzymes provide a complete signal for methylation",
+        "assures methylation of both DNA and histones"
+      ]
+    },
+    {
+      "text": "CREs",
+      "wrongChoices": [
+        "are regulatory elements set far from the gene"
+      ],
+      "correctAnswers": [
+        "are cis regulatory elements",
+        "are regulatory elements set close to the gene",
+        "are enhancers and silencers"
+      ]
+    },
+    {
+      "text": "posttranscriptional regulation of expression",
+      "wrongChoices": [],
+      "correctAnswers": [
+        "is RNA splicing",
+        "is RNA adenylation and methylation",
+        "is RNA interference",
+        "is transport of the RNA from the nucleus"
+      ]
+    },
+    {
+      "text": "RNA interference",
+      "wrongChoices": [
+        "does not occur in plants",
+        "is the process of posttranslational modification",
+        "is the process of silencing expression by ssRNA"
+      ],
+      "correctAnswers": [
+        "is the process of silencing expression by dsRNA"
+      ]
+    },
+    {
+      "text": "siRNA in RNA interference",
+      "wrongChoices": [
+        "are single stranded",
+        "are 100-150 nt long"
+      ],
+      "correctAnswers": [
+        "are small interfering RNAs",
+        "are 20-24 nt long"
+      ]
+    },
+    {
+      "text": "DCL enzyme",
+      "wrongChoices": [
+        "cleaves RNA to long fragments"
+      ],
+      "correctAnswers": [
+        "is a DICER-like enzyme",
+        "cleaves RNA to small fragments",
+        "plays crucial role in RNA interference"
+      ]
+    },
+    {
+      "text": "Argonaut protein",
+      "wrongChoices": [
+        "binds double strand sRNA"
+      ],
+      "correctAnswers": [
+        "binds single strand sRNA",
+        "is part of a RISC complex",
+        "plays crucial role in RNA interference"
+      ]
+    },
+    {
+      "text": "dsRNA",
+      "wrongChoices": [
+        "does not exist"
+      ],
+      "correctAnswers": [
+        "is created by duplication of viral ssRNA",
+        "is created by transcription of an inverted repeat",
+        "is created from ssRNA by RDR"
+      ]
+    },
+    {
+      "text": "",
+      "wrongChoices": [
+        "",
+        ""
+      ],
+      "correctAnswers": [
+        "",
+        ""
+      ]
+    },
+    {
+      "text": "",
+      "wrongChoices": [
+        "",
+        ""
+      ],
+      "correctAnswers": [
+        "",
+        ""
+      ]
+    },
+    {
+      "text": "",
+      "wrongChoices": [
+        "",
+        ""
+      ],
+      "correctAnswers": [
+        "",
+        ""
+      ]
+    }
+
+  ]
+}
