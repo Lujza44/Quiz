@@ -1,6 +1,6 @@
 {
-  "name": "Bioinformatic Algorithms",
-  "description": "Each question consists of a term from the molecular genetics of plants. Your task is to select all the options that apply to the given term. Zero to all options can be correct.",
+  "name": "Molecular genetics of plants",
+  "description": "Each question consists of a term from the molecular genetics of plants. Your task is to select all the options that apply to the given term. Zero to all options can be correct. Please enter you answer as letters separated by a comma and a space (for example: a, b, c).",
   "questions": [
     {
       "text": "de novo methylation",
@@ -48,7 +48,6 @@
     },
     {
       "text": "posttranscriptional regulation of expression",
-      "wrongChoices": [],
       "correctAnswers": [
         "is RNA splicing",
         "is RNA adenylation and methylation",
@@ -112,14 +111,131 @@
       ]
     },
     {
-      "text": "",
+      "text": "demethylation",
       "wrongChoices": [
-        "",
-        ""
+        "demethylated promoters lead to lower expression"
       ],
       "correctAnswers": [
-        "",
-        ""
+        "is done by enzymes ROS1, DML2, DML3, DME",
+        "is done by demethylases and glycosylases",
+        "demethylated promoters lead to higher expression"
+      ]
+    },
+    {
+      "text": "steps of RNA interference are",
+      "wrongChoices": [
+        "ARGONAUT binds short dsRNA"
+      ],
+      "correctAnswers": [
+        "cleavage of dsRNA by DCL",
+        "ARGONAUT binds short ssRNA",
+        "RISC recognises mRNA sequence to be cleaved"
+      ]
+    },
+    {
+      "text": "miRNA",
+      "wrongChoices": [
+        "is tRNA"
+      ],
+      "correctAnswers": [
+        "is sRNA",
+        "regulates master regulators in trans",
+        "is made from RNA Pol II transcript"
+      ]
+    },
+    {
+      "text": "siRNA",
+      "correctAnswers": [
+        "is sRNA",
+        "is dsDNA",
+        "regulates expression both in cis and in trans",
+        "can originate both from outside and inside of the cell"
+      ]
+    },
+    {
+      "text": "secondary siRNA",
+      "wrongChoices": [
+        "is 22 nt long",
+        "is cleaved by DCL2"
+      ],
+      "correctAnswers": [
+        "is 21 nt long",
+        "is cleaved by DCL4"
+      ]
+    },
+    {
+      "text": "transmembrane carriers",
+      "wrongChoices": [
+        "carry sRNA between cells",
+        "are DCL proteins",
+        "are ARGONAUT proteins"
+      ],
+      "correctAnswers": [
+        "are not present in plants"
+      ]
+    },
+    {
+      "text": "RNAi",
+      "wrongChoices": [
+        "cannot ensure virus resistance in new leaves"
+      ],
+      "correctAnswers": [
+        "serves for defense against TE",
+        "serves for defense against viruses",
+        "ensures that new leaves are virus resistant"
+      ]
+    },
+    {
+      "text": "DNA cut & paste TE",
+      "wrongChoices": [
+        "cannot multiplicatively spread through genome"
+      ],
+      "correctAnswers": [
+        "have inverted repeats",
+        "code transponase",
+        "leave footprint (short duplicated DNA)"
+      ]
+    },
+    {
+      "text": "DNA copy & paste TE",
+      "wrongChoices": [
+        "use RNA intermediate to spread",
+        "happen by double strand break in DNA"
+      ],
+      "correctAnswers": [
+        "are for example Helitrons",
+        "use dsRNA intermediate to spread"
+      ]
+    },
+    {
+      "text": "LTR retrotransposones",
+      "wrongChoices": [
+        "have inverted repeats",
+        "leave footprint (short duplicated DNA)"
+      ],
+      "correctAnswers": [
+        "have forward repeats",
+        "code integrase, polymerase and Gag protein"
+      ]
+    },
+    {
+      "text": "retrotransposones without LTR",
+      "wrongChoices": [
+        "are for example MULEs",
+        "are for example MITEs"
+      ],
+      "correctAnswers": [
+        "are for example LINEs",
+        "are for example SINEs"
+      ]
+    },
+    {
+      "text": "TEs succeed",
+      "wrongChoices": [
+        "by low copy number",
+        "by lowering the fitness",
+        "by disappearing from genome",
+        "by activating other TEs"
       ]
     },
     {
