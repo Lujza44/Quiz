@@ -1,10 +1,14 @@
 package org.lujza;
+
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+
 public class Question {
     private String text;
     private List<String> wrongChoices = new ArrayList<>();
-    private List<String> correctAnswers;
+    private List<String> correctAnswers = new ArrayList<>();
+    private List<String> allChoices = new ArrayList<>();
 
     public String getText() {
         return text;
@@ -18,13 +22,17 @@ public class Question {
         return correctAnswers;
     }
 
-    public List<String> getAllChoices() {
-        List<String> allChoices = new ArrayList<>(correctAnswers);
+    public List<String> createAllChoices() {
         allChoices.addAll(wrongChoices);
+        allChoices.addAll(correctAnswers);
+        Collections.shuffle(allChoices);
         return allChoices;
     }
 
-    // Constructors, getters, and setters
+    public List<String> getAllChoices() {
+        return allChoices;
+    }
+
     // toto mozno pre tvoju osobnu kontrolu, aby si nemusela kontrolovat manualne tvoj JSON,
     // ci mas spravne zadefinovanu otazku
     public boolean isValid() {
@@ -33,13 +41,18 @@ public class Question {
         // to mi len tak napadlo
         return true;
     }
+
     public boolean isTextInput() {
         return wrongChoices.isEmpty() && correctAnswers.size() == 1;
     }
+
     public boolean isSingleAnswer() {
         return !wrongChoices.isEmpty() && correctAnswers.size() == 1;
     }
+
     public boolean isMultipleAnswer() {
-        return !wrongChoices.isEmpty() && correctAnswers.size() > 1;
+        //return !wrongChoices.isEmpty() && correctAnswers.size() > 1;
+        return correctAnswers.size() != 1; // moze byt aj 0 correct answers, moze byt aj 0 wrong choices
+
     }
 }

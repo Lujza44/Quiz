@@ -27,34 +27,101 @@ public class QuizPrep {
         List<Question> questions = theme.getQuestions();
         Collections.shuffle(questions);
         for (Question question : questions) {
-            prompt(question);
-            // skontrolovat ci je odpoved uzivatela spravna
+            String answer = prompt(question); // vypisem uzivatelovi otazku
+            String result = evaluate(question, answer); // skontrolovat ci je odpoved uzivatela spravna
+            if (mode.equals("1")) { // po kazdej otazke vypisujem spravne/nespravne iba v precvicovacom mode
+                System.out.println(result);
+            }
+        }
+        if (mode.equals("2")) {
+            //TODO vypisat vysledny pocet bodov
         }
     }
 
-    private String prompt(Question question) {
-        System.out.println(question.getText());
-        List<String> allChoices = question.getAllChoices();
+    public String evaluate(Question question, String answer) {
         if (question.isTextInput()) {
-
+            return evalText(question, answer);
+        } else if (question.isSingleAnswer()) {
+            return evalSingle(question,answer);
         } else {
-            Collections.shuffle(allChoices);
-            for (int i = 0; i < allChoices.size(); i++) {
-                System.out.println(String.format("%s. %s", i, allChoices.get(i)));
+            return evalMulti(question,answer);
+        }
+    }
+
+    private String evalText(Question question, String answer) { //TODO pocitanie bodov
+        String correct = question.getCorrectAnswers().getLast();
+        if (correct.equalsIgnoreCase(answer)) {
+            return "Correct!";
+        } else {
+            return "Wrong. Correct was: " + correct;
+        }
+    }
+
+    private String evalSingle(Question question, String answer) { //TODO pocitanie bodov
+        String correct = question.getCorrectAnswers().getLast();
+        List<String> allChoices = question.getAllChoices();
+        char maxLetter = (char) ('a' + allChoices.size() - 1);
+
+        if(answer.length() == 1 && answer.charAt(0) >= 'a' && answer.charAt(0) <= maxLetter) { //spravny format
+            int index = answer.charAt(0) - 'a';
+            String chosenOption = allChoices.get(index);
+            if (correct.equalsIgnoreCase(chosenOption)) {
+                return "Correct!";
             }
         }
+        int correctIndex = allChoices.indexOf(correct);
+        char letterIndex = (char) ('a' + correctIndex);
 
-        return getUserChoice(allChoices.size()-1);
+        return "Wrong. Correct was: " + letterIndex + ") " + correct;
+    }
+
+    private String evalMulti(Question question, String answer) {
+        List<String> correct = question.getCorrectAnswers();
+        List<String> allChoices = question.getAllChoices();
+        char maxLetter = (char) ('a' + allChoices.size() - 1);
+
+        //TODO skontrolovat format (a, b, c)
+        if (validMultiFormat(answer, maxLetter)) {
+
+        }
+        //TODO pre kazde zadane pismenko skontrolvat ci je v correctAnswers
+        return "";
+    }
+
+    private boolean validMultiFormat(String answer, char maxLetter) {
+        String[] selectedOptions = answer.split(", ");
+        for (String option : selectedOptions) {
+            if (option.length() != 1 || option.charAt(0) < 'a' || option.charAt(0) > maxLetter) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+    private String prompt(Question question) {
+        System.out.println();
+        System.out.println(question.getText());
+        if (question.isSingleAnswer() || question.isMultipleAnswer()) { // ak je otazka aj s moznostami, vypisem ich
+            List<String> allChoices = question.createAllChoices();
+            for (int i = 0; i < allChoices.size(); i++) {
+                char letter = (char) ('a' + i);
+                System.out.println(String.format("%s) %s", letter, allChoices.get(i)));
+            }
+        }
+        return getUserChoice(); // uzivatel moze zadat akykolvek string
     }
 
     private String prompt(List<Theme> themes) {
+        System.out.println();
         for (int i = 0; i < themes.size(); i++) {
             System.out.println(String.format("%s. %s", i, themes.get(i).getName()));
         }
-        return getUserChoice(themes.size()-1);
+        return getUserChoice(themes.size() - 1);
     }
 
     private String prompt(String text, int maxOption) {
+        System.out.println();
         System.out.println(text);
         return getUserChoice(maxOption);
     }
@@ -80,6 +147,17 @@ public class QuizPrep {
                 }
             } catch (NumberFormatException e) {
                 System.out.print("Invalid input. Please enter a valid number: ");
+            }
+        }
+    }
+
+    private String getUserChoice() { //TODO hadze do prvej otazky prazdnu odpoved, zatial to neviem odstranit
+        while (true) {
+            String next = scanner.nextLine();
+            if (next.equalsIgnoreCase("EXIT")) {
+                System.exit(0);
+            } else {
+                return next;
             }
         }
     }
