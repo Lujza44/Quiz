@@ -4,7 +4,7 @@
   "questions": [
     {
       "text": "Hamming Distance",
-      "wrongChoices": [
+      "wrongAnswers": [
         "MSA scoring",
         "Multiple Sequence Alignment",
         "Determination of the parameters of HMM"
@@ -13,7 +13,7 @@
     },
     {
       "text": "Edit Distance",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Speeding up database searches",
         "MSA scoring",
         "Protein structure similarity determination"
@@ -22,7 +22,7 @@
     },
     {
       "text": "Operation-Weighted Edit Distance",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Local pairwise Alignment",
         "Construction of a phylogenetic tree",
         "MSA scoring"
@@ -31,7 +31,7 @@
     },
     {
       "text": "Alphabet-Wighted Edit Distance",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Multiple Sequence Alignment",
         "MSA scoring",
         "Speeding up database searches"
@@ -40,7 +40,7 @@
     },
     {
       "text": "Needleman-Wunsch",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Pairwise alignment scoring",
         "Multiple Sequence Alignment",
         "Local pairwise alignment"
@@ -49,7 +49,7 @@
     },
     {
       "text": "Smith-Waterman",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Multiple Sequence Alignment",
         "Global pairwise alignment",
         "Pairwise alignment scoring"
@@ -58,7 +58,7 @@
     },
     {
       "text": "Minimum Entropy",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Construction of a phylogenetic tree",
         "Pairwise alignment scoring",
         "Search for a motif"
@@ -67,7 +67,7 @@
     },
     {
       "text": "Sum of Paris",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Protein structure similarity determination",
         "Pairwise alignment scoring",
         "Construction of a phylogenetic tree"
@@ -76,7 +76,7 @@
     },
     {
       "text": "Multidimensional Dynamic Programming",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Alignment search using HMM",
         "MSA scoring",
         "Global pairwise alignment"
@@ -85,7 +85,7 @@
     },
     {
       "text": "Star Alignment",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Pairwise alignment scoring",
         "Search for a motif",
         "Protein structure similarity determination"
@@ -94,7 +94,7 @@
     },
     {
       "text": "Feng & Doolitle",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Protein structure similarity determination",
         "MSA scoring",
         "Construction of a phylogenetic tree"
@@ -103,7 +103,7 @@
     },
     {
       "text": "CLUSTAL W",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Determination of the parameters of HMM",
         "Alignment search using HMM",
         "Speeding up database searches"
@@ -112,7 +112,7 @@
     },
     {
       "text": "T-Coffee",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Protein structure similarity determination",
         "Alignment search using HMM",
         "Speeding up database searches"
@@ -121,7 +121,7 @@
     },
     {
       "text": "Barton & Sternberg",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Alignment search using HMM",
         "Protein structure similarity determination",
         "Search for a motif"
@@ -130,7 +130,7 @@
     },
     {
       "text": "DIALIGN",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Search for a motif",
         "Speeding up database searches",
         "Protein structure similarity determination"
@@ -139,7 +139,7 @@
     },
     {
       "text": "MAFFT",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Speeding up database searches",
         "Construction of a phylogenetic tree",
         "Protein structure similarity determination"
@@ -148,7 +148,7 @@
     },
     {
       "text": "MUSCLE",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Pairwise alignment scoring",
         "Global pairwise alignment",
         "Protein structure similarity determination"
@@ -157,7 +157,7 @@
     },
     {
       "text": "FASTA",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Search for a motif",
         "Construction of a phylogenetic tree",
         "Protein structure similarity determination"
@@ -166,7 +166,7 @@
     },
     {
       "text": "BLAST",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Construction of a phylogenetic tree",
         "Multiple Sequence Alignment",
         "Protein structure similarity determination"
@@ -175,7 +175,7 @@
     },
     {
       "text": "BLAT",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Multiple Sequence Alignment",
         "Construction of a phylogenetic tree",
         "Protein structure similarity determination"
@@ -184,7 +184,7 @@
     },
     {
       "text": "SSAHA",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Protein structure similarity determination",
         "Local pairwise alignment",
         "Determination of the parameters of HMM"
@@ -193,7 +193,7 @@
     },
     {
       "text": "FT#N",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Multiple Sequence Alignment",
         "Global pairwise alignment",
         "Construction of a phylogenetic tree"
@@ -202,7 +202,7 @@
     },
     {
       "text": "Viterbi Algorithm",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Pairwise alignment scoring",
         "MSA scoring",
         "Protein structure similarity determination"
@@ -211,7 +211,7 @@
     },
     {
       "text": "Forward Algorithm",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Multiple Sequence Alignment",
         "Search for a motif",
         "Construction of a phylogenetic tree"
@@ -220,7 +220,7 @@
     },
     {
       "text": "Backward Algorithm",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Construction of a phylogenetic tree",
         "Search for a motif",
         "Multiple Sequence Alignment"
@@ -229,7 +229,7 @@
     },
     {
       "text": "Posterior Decoding",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Probabilistic search for suboptimal alignments",
         "Pairwise alignment scoring",
         "Multiple Sequence Alignment"
@@ -238,7 +238,7 @@
     },
     {
       "text": "Baum-Welch",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Construction of a phylogenetic tree",
         "Search for a motif",
         "Alignment search using HMM"
@@ -247,7 +247,7 @@
     },
     {
       "text": "Waterman-Eggert",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Protein structure similarity determination",
         "Search for a motif",
         "Alignment search using HMM"
@@ -256,7 +256,7 @@
     },
     {
       "text": "PSSM",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Multiple Sequence Alignment",
         "Speeding up database searches",
         "Alignment search using HMM"
@@ -265,7 +265,7 @@
     },
     {
       "text": "PSI-BLAST",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Protein structure similarity determination",
         "Speeding up database searches",
         "Alignment search using HMM"
@@ -274,7 +274,7 @@
     },
     {
       "text": "Profile HMM",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Alignment search using HMM",
         "Speeding up database searches",
         "MSA scoring"
@@ -283,7 +283,7 @@
     },
     {
       "text": "UPGMA",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Protein structure similarity determination",
         "Speeding up database searches",
         "Alignment search using HMM"
@@ -292,7 +292,7 @@
     },
     {
       "text": "Neighbor Joining",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Protein structure similarity determination",
         "Pairwise alignment scoring",
         "Multiple Sequence Alignment"
@@ -301,7 +301,7 @@
     },
     {
       "text": "Maximal Parsimony",
-      "wrongChoices": [
+      "wrongAnswers": [
         "MSA scoring",
         "Search for a motif",
         "Speeding up database searches"
@@ -310,7 +310,7 @@
     },
     {
       "text": "DALI",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Local pairwise alignment",
         "Multiple Sequence Alignment",
         "Global pairwise alignment"
@@ -319,7 +319,7 @@
     },
     {
       "text": "CE",
-      "wrongChoices": [
+      "wrongAnswers": [
         "MSA scoring",
         "Global pairwise alignment",
         "Alignment search using HMM"
@@ -328,7 +328,7 @@
     },
     {
       "text": "SSAP",
-      "wrongChoices": [
+      "wrongAnswers": [
         "MSA scoring",
         "Alignment search using HMM",
         "Speeding up database searches"
@@ -337,7 +337,7 @@
     },
     {
       "text": "PROSUP, STRUCTAL",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Speeding up database searches",
         "Multiple Sequence Alignment",
         "Global pairwise alignment"
@@ -346,7 +346,7 @@
     },
     {
       "text": "MAMMOTH",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Alignment search using HMM",
         "Multiple Sequence Alignment",
         "Probabilistic search for suboptimal alignments"
@@ -355,7 +355,7 @@
     },
     {
       "text": "FATCAT",
-      "wrongChoices": [
+      "wrongAnswers": [
         "Multiple Sequence Alignment",
         "Pairwise alignment scoring",
         "Speeding up database searches"

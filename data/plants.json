@@ -4,7 +4,7 @@
   "questions": [
     {
       "text": "de novo methylation",
-      "wrongChoices": [
+      "wrongAnswers": [
         "is not possible in plants",
         "is induced by histone modifications"
       ],
@@ -15,7 +15,7 @@
     },
     {
       "text": "CpG context of DNA methylation",
-      "wrongChoices": [
+      "wrongAnswers": [
         "is the same as GpC context"
       ],
       "correctAnswers": [
@@ -26,7 +26,7 @@
     },
     {
       "text": "CMT3 and SUVH4 positive feedback loop",
-      "wrongChoices": [
+      "wrongAnswers": [
         "CMT3 methylates first",
         "SUVH4 methylates first"
       ],
@@ -37,7 +37,7 @@
     },
     {
       "text": "CREs",
-      "wrongChoices": [
+      "wrongAnswers": [
         "are regulatory elements set far from the gene"
       ],
       "correctAnswers": [
@@ -57,7 +57,7 @@
     },
     {
       "text": "RNA interference",
-      "wrongChoices": [
+      "wrongAnswers": [
         "does not occur in plants",
         "is the process of posttranslational modification",
         "is the process of silencing expression by ssRNA"
@@ -68,7 +68,7 @@
     },
     {
       "text": "siRNA in RNA interference",
-      "wrongChoices": [
+      "wrongAnswers": [
         "are single stranded",
         "are 100-150 nt long"
       ],
@@ -79,7 +79,7 @@
     },
     {
       "text": "DCL enzyme",
-      "wrongChoices": [
+      "wrongAnswers": [
         "cleaves RNA to long fragments"
       ],
       "correctAnswers": [
@@ -90,7 +90,7 @@
     },
     {
       "text": "Argonaut protein",
-      "wrongChoices": [
+      "wrongAnswers": [
         "binds double strand sRNA"
       ],
       "correctAnswers": [
@@ -101,7 +101,7 @@
     },
     {
       "text": "dsRNA",
-      "wrongChoices": [
+      "wrongAnswers": [
         "does not exist"
       ],
       "correctAnswers": [
@@ -112,7 +112,7 @@
     },
     {
       "text": "demethylation",
-      "wrongChoices": [
+      "wrongAnswers": [
         "demethylated promoters lead to lower expression"
       ],
       "correctAnswers": [
@@ -123,7 +123,7 @@
     },
     {
       "text": "steps of RNA interference are",
-      "wrongChoices": [
+      "wrongAnswers": [
         "ARGONAUT binds short dsRNA"
       ],
       "correctAnswers": [
@@ -134,7 +134,7 @@
     },
     {
       "text": "miRNA",
-      "wrongChoices": [
+      "wrongAnswers": [
         "is tRNA"
       ],
       "correctAnswers": [
@@ -154,7 +154,7 @@
     },
     {
       "text": "secondary siRNA",
-      "wrongChoices": [
+      "wrongAnswers": [
         "is 22 nt long",
         "is cleaved by DCL2"
       ],
@@ -165,7 +165,7 @@
     },
     {
       "text": "transmembrane carriers",
-      "wrongChoices": [
+      "wrongAnswers": [
         "carry sRNA between cells",
         "are DCL proteins",
         "are ARGONAUT proteins"
@@ -176,7 +176,7 @@
     },
     {
       "text": "RNAi",
-      "wrongChoices": [
+      "wrongAnswers": [
         "cannot ensure virus resistance in new leaves"
       ],
       "correctAnswers": [
@@ -187,7 +187,7 @@
     },
     {
       "text": "DNA cut & paste TE",
-      "wrongChoices": [
+      "wrongAnswers": [
         "cannot multiplicatively spread through genome"
       ],
       "correctAnswers": [
@@ -198,7 +198,7 @@
     },
     {
       "text": "DNA copy & paste TE",
-      "wrongChoices": [
+      "wrongAnswers": [
         "use RNA intermediate to spread",
         "happen by double strand break in DNA"
       ],
@@ -209,7 +209,7 @@
     },
     {
       "text": "LTR retrotransposones",
-      "wrongChoices": [
+      "wrongAnswers": [
         "have inverted repeats",
         "leave footprint (short duplicated DNA)"
       ],
@@ -220,7 +220,7 @@
     },
     {
       "text": "retrotransposones without LTR",
-      "wrongChoices": [
+      "wrongAnswers": [
         "are for example MULEs",
         "are for example MITEs"
       ],
@@ -231,7 +231,7 @@
     },
     {
       "text": "TEs succeed",
-      "wrongChoices": [
+      "wrongAnswers": [
         "by low copy number",
         "by lowering the fitness",
         "by disappearing from genome",
@@ -239,23 +239,153 @@
       ]
     },
     {
+      "text": "viruses spread",
+      "correctAnswers": [
+        "vertically (from parent to offspring plant)",
+        "horizontally if a cell wall is broken",
+        "by insects",
+        "inside a plant by plasmodesmas"
+      ]
+    },
+    {
+      "text": "virus inside a vector",
+      "wrongAnswers": [
+        "cannot spread"
+      ],
+      "correctAnswers": [
+        "can spread to vector offsprings",
+        "can adsorb on the vector",
+        "can infect the vector for a short period"
+      ]
+    },
+    {
+      "text": "viruses",
+      "wrongAnswers": [
+        "can increase plant growth"
+      ],
+      "correctAnswers": [
+        "can infect pests",
+        "can increase genetic variability",
+        "can increase plant's resistance"
+      ]
+    },
+    {
+      "text": "viroids",
+      "wrongAnswers": [
+        "code genes essential for their spreading",
+        "have a capsid"
+      ],
+      "correctAnswers": [
+        "are small circular ssDNA",
+        "do not code anything"
+      ]
+    },
+    {
       "text": "",
-      "wrongChoices": [
-        "",
+      "wrongAnswers": [
         ""
       ],
       "correctAnswers": [
+        "",
         "",
         ""
       ]
     },
     {
       "text": "",
-      "wrongChoices": [
-        "",
+      "wrongAnswers": [
         ""
       ],
       "correctAnswers": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "text": "",
+      "wrongAnswers": [
+        ""
+      ],
+      "correctAnswers": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "text": "",
+      "wrongAnswers": [
+        ""
+      ],
+      "correctAnswers": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "text": "",
+      "wrongAnswers": [
+        ""
+      ],
+      "correctAnswers": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "text": "",
+      "wrongAnswers": [
+        ""
+      ],
+      "correctAnswers": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "text": "",
+      "wrongAnswers": [
+        ""
+      ],
+      "correctAnswers": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "text": "",
+      "wrongAnswers": [
+        ""
+      ],
+      "correctAnswers": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "text": "",
+      "wrongAnswers": [
+        ""
+      ],
+      "correctAnswers": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "text": "",
+      "wrongAnswers": [
+        ""
+      ],
+      "correctAnswers": [
+        "",
         "",
         ""
       ]

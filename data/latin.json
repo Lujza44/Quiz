@@ -4,7 +4,7 @@
     "questions": [
       {
         "text": "de novo",
-        "wrongChoices": [
+        "wrongAnswers": [
           "at the end",
           "simply",
           "next time"
@@ -13,7 +13,7 @@
       },
       {
         "text": "ex vivo",
-        "wrongChoices": [
+        "wrongAnswers": [
           "inside a living organism",
           "before life",
           "after life"
@@ -22,7 +22,7 @@
       },
       {
         "text": "in vitro",
-        "wrongChoices": [
+        "wrongAnswers": [
           "inside a living organism",
           "in the original place",
           "by computer simulation"
@@ -31,7 +31,7 @@
       },
       {
         "text": "in vivo",
-        "wrongChoices": [
+        "wrongAnswers": [
           "outside a living organism",
           "after life",
           "before life"
@@ -40,7 +40,7 @@
       },
       {
         "text": "in situ",
-        "wrongChoices": [
+        "wrongAnswers": [
           "outside a living organism",
           "inside a living organism",
           "by computer simulation"
@@ -49,7 +49,7 @@
       },
       {
         "text": "in silico",
-        "wrongChoices": [
+        "wrongAnswers": [
           "after life",
           "before life",
           "in the original place"
@@ -58,7 +58,7 @@
       },
       {
         "text": "Acta non verba",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Words not actions",
           "After the fact",
           "Before the action"
@@ -67,7 +67,7 @@
       },
       {
         "text": "Amor vincit omnia",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Hope binds everything",
           "Strength overcomes obstacles",
           "Time heals everything"
@@ -76,7 +76,7 @@
       },
       {
         "text": "Audere est faucere",
-        "wrongChoices": [
+        "wrongAnswers": [
           "To wait is to loose",
           "To speak is to act",
           "To think is to exist"
@@ -85,7 +85,7 @@
       },
       {
         "text": "Veni, vidi, vici",
-        "wrongChoices": [
+        "wrongAnswers": [
           "I heard, I observed, I learned",
           "I questioned, I sought, I achieved",
           "I traveled, I discovered, I returned"
@@ -94,7 +94,7 @@
       },
       {
         "text": "Non ducor, duco",
-        "wrongChoices": [
+        "wrongAnswers": [
           "I do not follow, I pursue",
           "I am not silent, I speak",
           "I am not defeated, I conquer"
@@ -103,7 +103,7 @@
       },
       {
         "text": "Bona fide",
-        "wrongChoices": [
+        "wrongAnswers": [
           "With honest intention",
           "By rightful claim",
           "Through pure heart"
@@ -112,7 +112,7 @@
       },
       {
         "text": "Cras es noster",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Yesterday was ours",
           "Today is fleeting",
           "The future is uncertain"
@@ -121,7 +121,7 @@
       },
       {
         "text": "Dictum factum",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Promised and forgotten",
           "Thought and realized",
           "Declared and withdrawn"
@@ -130,7 +130,7 @@
       },
       {
         "text": "Dum vita est, spes est",
-        "wrongChoices": [
+        "wrongAnswers": [
           "While there is time, there is possibility",
           "While there is courage, there is victory",
           "While there is peace, there is prosperity"
@@ -139,7 +139,7 @@
       },
       {
         "text": "Carpe diem",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Cherish the night",
           "Remember the past",
           "Plan for tomorrow"
@@ -148,7 +148,7 @@
       },
       {
         "text": "Familia supra omnia",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Honor above all",
           "Duty above all",
           "Love above all"
@@ -157,7 +157,7 @@
       },
       {
         "text": "Fons vitae caritas",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Hope is the foundation of existence",
           "Faith is the wellspring of joy",
           "Charity is the key to happiness"
@@ -166,7 +166,7 @@
       },
       {
         "text": "Sapientia potentia est",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Wisdom is strength",
           "Insight is courage",
           "Understanding is victory"
@@ -175,7 +175,7 @@
       },
       {
         "text": "Pax vobiscum",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Strength be within you",
           "Hope reside among you",
           "Evil be far from you"
@@ -184,7 +184,7 @@
       },
       {
         "text": "Fortiter et fideliter",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Strongly and wisely",
           "Boldly and truly",
           "Courageously and loyally"
@@ -193,7 +193,7 @@
       },
       {
         "text": "Omne initium difficile est",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Every end is inevitable",
           "Every choice is crucial",
           "Every journey is easy"
@@ -202,7 +202,7 @@
       },
       {
         "text": "Sic vita est",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Thus it begins",
           "So it ends",
           "Life goes on"
@@ -211,7 +211,7 @@
       },
       {
         "text": "Sic infit",
-        "wrongChoices": [
+        "wrongAnswers": [
           "So it concludes",
           "As it was",
           "And so it remains"
@@ -220,7 +220,7 @@
       },
       {
         "text": "Igne natura renovatur integra",
-        "wrongChoices": [
+        "wrongAnswers": [
           "By water, life is cleansed",
           "In air, spirits are lifted",
           "With earth, stability is restored"
@@ -229,7 +229,7 @@
       },
       {
         "text": "Ordo ab chao",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Peace from conflict",
           "Clarity from uncertainty",
           "Strength from adversity"
@@ -238,7 +238,7 @@
       },
       {
         "text": "Libertas perfundet omnia luce",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Darkness shall cover the earth",
           "Knowledge illuminates every path",
           "Wisdom pervades all things"
@@ -247,7 +247,7 @@
       },
       {
         "text": "Verba volant, scripta manent",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Promises are forgotten, actions endure",
           "Dreams fade, memories last",
           "Voices quiet, echoes stay"
@@ -256,7 +256,7 @@
       },
       {
         "text": "Grandescunt aucta labore",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Small beginnings lead to great endings",
           "Efforts diminish over time",
           "Success comes to those who wait"
@@ -265,7 +265,7 @@
       },
       {
         "text": "Ad meliora",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Away from the past",
           "Through the difficult",
           "Beyond the stars"
@@ -274,7 +274,7 @@
       },
       {
         "text": "Calamus gladio fortior",
-        "wrongChoices": [
+        "wrongAnswers": [
           "The shield is stronger than the lance",
           "The word is weaker than the action",
           "The mind is inferior to the muscle"
@@ -283,7 +283,7 @@
       },
       {
         "text": "Vacate et scire",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Leave and learn",
           "Rest and realize",
           "Depart and discover"
@@ -292,7 +292,7 @@
       },
       {
         "text": "In absentia lucis, tenebrae vincunt",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Where there is hope, despair wins",
           "Without knowledge, ignorance conquers",
           "Absent love, hate triumphs"
@@ -301,7 +301,7 @@
       },
       {
         "text": "Ego te provoco",
-        "wrongChoices": [
+        "wrongAnswers": [
           "I forgive you",
           "I follow you",
           "I thank you"
@@ -310,7 +310,7 @@
       },
       {
         "text": "Quam bene non quantum",
-        "wrongChoices": [
+        "wrongAnswers": [
           "The quality, not the quantity",
           "What kind, not how many",
           "The intention, not the action"
@@ -319,7 +319,7 @@
       },
       {
         "text": "Magna est vis consuetudinis",
-        "wrongChoices": [
+        "wrongAnswers": [
           "The power of nature is immense",
           "The strength of will is supreme",
           "The influence of culture is powerful"
@@ -328,7 +328,7 @@
       },
       {
         "text": "Non loqui sed facere",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Not to promise but to prove",
           "Not to question but to accept",
           "Not to dream but to realize"
@@ -337,7 +337,7 @@
       },
       {
         "text": "Bono malum superate",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Surpass the bad with the better",
           "Defeat hate with love",
           "Conquer fear with hope"
@@ -346,7 +346,7 @@
       },
       {
         "text": "Qui totum vult totum perdit",
-        "wrongChoices": [
+        "wrongAnswers": [
           "He who seeks peace finds war",
           "He who demands speed gains delay",
           "He who chases shadows catches none"
@@ -355,7 +355,7 @@
       },
       {
         "text": "Ad victoriam",
-        "wrongChoices": [
+        "wrongAnswers": [
           "Towards defeat",
           "Beyond the challenge",
           "Under the banner"
