@@ -6,31 +6,30 @@ import java.util.List;
 
 public class Question {
     private String text;
-    private List<String> wrongChoices = new ArrayList<>();
+    private List<String> wrongAnswers = new ArrayList<>();
     private List<String> correctAnswers = new ArrayList<>();
-    private List<String> allChoices = new ArrayList<>();
-
     public String getText() {
         return text;
     }
 
-    public List<String> getWrongChoices() {
-        return wrongChoices;
+    public List<String> getWrongAnswers() {
+        return wrongAnswers;
     }
 
     public List<String> getCorrectAnswers() {
         return correctAnswers;
     }
 
-    public List<String> createAllChoices() {
-        allChoices.addAll(wrongChoices);
-        allChoices.addAll(correctAnswers);
-        Collections.shuffle(allChoices);
-        return allChoices;
+    public List<String> shuffleAnswers() {
+        List<String> all = getAllAnswers();
+        Collections.shuffle(all);
+        return all;
     }
 
-    public List<String> getAllChoices() {
-        return allChoices;
+    public List<String> getAllAnswers() {
+        List<String> allAnswers = new ArrayList<>(correctAnswers);
+        allAnswers.addAll(wrongAnswers);
+        return allAnswers;
     }
 
     // toto mozno pre tvoju osobnu kontrolu, aby si nemusela kontrolovat manualne tvoj JSON,
@@ -43,11 +42,11 @@ public class Question {
     }
 
     public boolean isTextInput() {
-        return wrongChoices.isEmpty() && correctAnswers.size() == 1;
+        return wrongAnswers.isEmpty() && correctAnswers.size() == 1;
     }
 
     public boolean isSingleAnswer() {
-        return !wrongChoices.isEmpty() && correctAnswers.size() == 1;
+        return !wrongAnswers.isEmpty() && correctAnswers.size() == 1;
     }
 
     public boolean isMultipleAnswer() {

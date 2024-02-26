@@ -1,9 +1,7 @@
 package org.lujza;
 
 import java.io.IOException;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class QuizPrep {
     private Scanner scanner = new Scanner(System.in);
@@ -27,89 +25,72 @@ public class QuizPrep {
         List<Question> questions = theme.getQuestions();
         Collections.shuffle(questions);
         for (Question question : questions) {
-            String answer = prompt(question); // vypisem uzivatelovi otazku
-            String result = evaluate(question, answer); // skontrolovat ci je odpoved uzivatela spravna
-            if (mode.equals("1")) { // po kazdej otazke vypisujem spravne/nespravne iba v precvicovacom mode
-                System.out.println(result);
-            }
+            List<String> answers = prompt(question); // vypisem uzivatelovi otazku a vratim jeho odpoved(e)
+            System.out.println(evaluate(question, answers)); // skontrolovat ci je odpoved uzivatela spravna
         }
+        //TODO vypisat ze sa vycerpali vsetky otazky
+
         if (mode.equals("2")) {
             //TODO vypisat vysledny pocet bodov
         }
     }
 
-    public String evaluate(Question question, String answer) {
-        if (question.isTextInput()) {
-            return evalText(question, answer);
-        } else if (question.isSingleAnswer()) {
-            return evalSingle(question,answer);
-        } else {
-            return evalMulti(question,answer);
-        }
-    }
+    public String evaluate(Question question, List<String> answers) {
+        List<String> correctAnswers = question.getCorrectAnswers();
+        // toto asi neni optimalne :D ale nemozem sortovat answers, lebo List.of dava immutable list
+        // TODO prerobit to + pre textovu odpoved to nefunguje, lebo este treba ignorecase
+        Set<String> set1 = new HashSet<>(correctAnswers);
+        Set<String> set2 = new HashSet<>(answers);
 
-    private String evalText(Question question, String answer) { //TODO pocitanie bodov
-        String correct = question.getCorrectAnswers().getLast();
-        if (correct.equalsIgnoreCase(answer)) {
+        if (set1.equals(set2)) {
             return "Correct!";
-        } else {
-            return "Wrong. Correct was: " + correct;
         }
-    }
-
-    private String evalSingle(Question question, String answer) { //TODO pocitanie bodov
-        String correct = question.getCorrectAnswers().getLast();
-        List<String> allChoices = question.getAllChoices();
-        char maxLetter = (char) ('a' + allChoices.size() - 1);
-
-        if(answer.length() == 1 && answer.charAt(0) >= 'a' && answer.charAt(0) <= maxLetter) { //spravny format
-            int index = answer.charAt(0) - 'a';
-            String chosenOption = allChoices.get(index);
-            if (correct.equalsIgnoreCase(chosenOption)) {
-                return "Correct!";
-            }
-        }
-        int correctIndex = allChoices.indexOf(correct);
-        char letterIndex = (char) ('a' + correctIndex);
-
-        return "Wrong. Correct was: " + letterIndex + ") " + correct;
-    }
-
-    private String evalMulti(Question question, String answer) {
-        List<String> correct = question.getCorrectAnswers();
-        List<String> allChoices = question.getAllChoices();
-        char maxLetter = (char) ('a' + allChoices.size() - 1);
-
-        //TODO skontrolovat format (a, b, c)
-        if (validMultiFormat(answer, maxLetter)) {
-
-        }
-        //TODO pre kazde zadane pismenko skontrolvat ci je v correctAnswers
-        return "";
-    }
-
-    private boolean validMultiFormat(String answer, char maxLetter) {
-        String[] selectedOptions = answer.split(", ");
-        for (String option : selectedOptions) {
-            if (option.length() != 1 || option.charAt(0) < 'a' || option.charAt(0) > maxLetter) {
-                return false;
-            }
-        }
-        return true;
+        return "Wrong."; //TODO vypisat co bola spravna odpoved ak mode = 1
     }
 
 
-    private String prompt(Question question) {
+    private List<String> prompt(Question question) {
         System.out.println();
         System.out.println(question.getText());
+        List<String> shuffledAnswers = new ArrayList<>();
+
         if (question.isSingleAnswer() || question.isMultipleAnswer()) { // ak je otazka aj s moznostami, vypisem ich
-            List<String> allChoices = question.createAllChoices();
-            for (int i = 0; i < allChoices.size(); i++) {
+            shuffledAnswers = question.shuffleAnswers();
+            for (int i = 0; i < shuffledAnswers.size(); i++) {
                 char letter = (char) ('a' + i);
-                System.out.println(String.format("%s) %s", letter, allChoices.get(i)));
+                System.out.println(String.format("%s) %s", letter, shuffledAnswers.get(i)));
             }
         }
-        return getUserChoice(); // uzivatel moze zadat akykolvek string
+        String input = getUserAnswer(); // uzivatel moze zadat akykolvek string
+        return getAnswerList(input, shuffledAnswers, question); // vratim odpoved(e) uzivatela ako zoznam
+    }
+
+    private List<String> getAnswerList(String input, List<String> shuffledAnswers, Question question) {
+        char maxLetter = (char) ('a' + shuffledAnswers.size() - 1);
+
+        if (question.isTextInput()) {
+            return List.of(input); // vratim zoznam s jednym prvkom, textovou odpovedou uzivatela
+        } else if (question.isSingleAnswer()) {
+            if (input.length() == 1 && input.charAt(0) >= 'a' && input.charAt(0) <= maxLetter) { // spravny format single odpovede
+                int index = input.charAt(0) - 'a';
+                String chosenOption = shuffledAnswers.get(index);
+                return List.of(chosenOption); // vratim zoznam so znenim moznosti ktoru uzivatel vybral
+            } else {
+                return new ArrayList<>(); // ak je format zly, neudeje sa nic, proste sa vypise, ze zle (pripadne co mala byt spravna odpoved)
+            }
+        } else {
+            List<String> splitInput = List.of(input.split(", "));
+            List<String> answers = new ArrayList<>();
+            for (String ans : splitInput) {
+                if (ans.length() != 1 || ans.charAt(0) < 'a' || ans.charAt(0) > maxLetter) {
+                    return new ArrayList<>(); // // ak je format zly, neudeje sa nic, proste sa vypise, ze zle (pripadne co mala byt spravna odpoved)
+                }
+                int index = ans.charAt(0) - 'a';
+                String chosenOption = shuffledAnswers.get(index);
+                answers.add(chosenOption);
+            }
+            return answers; // vratim zoznam so znenim moznosti ktore uzivatel vybal
+        }
     }
 
     private String prompt(List<Theme> themes) {
@@ -129,17 +110,15 @@ public class QuizPrep {
     private String getUserChoice(int maxOption) {
         System.out.print("Your choice: ");
         int choice;
+
         while (true) {
             try {
-
                 String next = scanner.next();
-
                 if (next.equalsIgnoreCase("EXIT")) {
                     System.exit(0);
                 }
 
                 choice = Integer.parseInt(next);
-
                 if (choice >= 0 && choice <= maxOption) {
                     return next;
                 } else {
@@ -151,7 +130,7 @@ public class QuizPrep {
         }
     }
 
-    private String getUserChoice() { //TODO hadze do prvej otazky prazdnu odpoved, zatial to neviem odstranit
+    private String getUserAnswer() { //TODO hadze to do prvej otazky prazdnu odpoved, zatial to neviem odstranit
         while (true) {
             String next = scanner.nextLine();
             if (next.equalsIgnoreCase("EXIT")) {
