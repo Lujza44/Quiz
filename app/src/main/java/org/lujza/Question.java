@@ -1,35 +1,37 @@
 package org.lujza;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Question {
     private String text;
     private List<String> wrongAnswers = new ArrayList<>();
-    private List<String> correctAnswers = new ArrayList<>();
+    private List<String> correctAnswers;
+
+    private List<String> allAnswers;
     public String getText() {
         return text;
-    }
-
-    public List<String> getWrongAnswers() {
-        return wrongAnswers;
     }
 
     public List<String> getCorrectAnswers() {
         return correctAnswers;
     }
 
-    public List<String> shuffleAnswers() {
-        List<String> all = getAllAnswers();
-        Collections.shuffle(all);
-        return all;
+    private Map<String,String> answersToMap() {
+        Map<String,String> map = new HashMap<>();
+        for (int i = 0; i < allAnswers.size(); i++) {
+            map.put(String.valueOf((char) ('a' + i)), allAnswers.get(i));
+        }
+        return map;
     }
 
-    public List<String> getAllAnswers() {
-        List<String> allAnswers = new ArrayList<>(correctAnswers);
-        allAnswers.addAll(wrongAnswers);
-        return allAnswers;
+    public Map<String, String> getAllAnswersMap() {
+        if (allAnswers == null) {
+            allAnswers = new ArrayList<>(correctAnswers);
+            allAnswers.addAll(wrongAnswers);
+            Collections.shuffle(allAnswers);
+        }
+        return answersToMap();
     }
 
     // toto mozno pre tvoju osobnu kontrolu, aby si nemusela kontrolovat manualne tvoj JSON,
@@ -51,7 +53,6 @@ public class Question {
 
     public boolean isMultipleAnswer() {
         //return !wrongChoices.isEmpty() && correctAnswers.size() > 1;
-        return correctAnswers.size() != 1; // moze byt aj 0 correct answers, moze byt aj 0 wrong choices
-
+        return correctAnswers.size() != 1;
     }
 }

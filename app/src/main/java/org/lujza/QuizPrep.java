@@ -9,6 +9,8 @@ public class QuizPrep {
     private String topic;
     private JsonReader jsonReader = new JsonReader("data");
 
+    private PointsCounter pointsCounter = new PointsCounter();
+
     public void startQuiz() throws IOException {
 
         mode = prompt("""
@@ -16,17 +18,19 @@ public class QuizPrep {
                 Application has two modes: practice mode and a test simulation.
                 Do you want to practice or simulate a test? Enter 1 for practice mode or 2 for a test simulation.""", 2);
 
+        //TODO vypisat temy indexovane od 1, nie od 0
         List<Theme> themes = jsonReader.load();
 
         topic = prompt(themes);
 
         Theme theme = themes.get(Integer.parseInt(topic));
 
+        //TODO vypisat popis temy, nech uzivatel vie, co sa ide diat
         List<Question> questions = theme.getQuestions();
         Collections.shuffle(questions);
         for (Question question : questions) {
             List<String> answers = prompt(question); // vypisem uzivatelovi otazku a vratim jeho odpoved(e)
-            System.out.println(evaluate(question, answers)); // skontrolovat ci je odpoved uzivatela spravna
+            evaluate(question, answers); // skontrolovat ci je odpoved uzivatela spravna
         }
         //TODO vypisat ze sa vycerpali vsetky otazky
 
@@ -35,59 +39,64 @@ public class QuizPrep {
         }
     }
 
-    public String evaluate(Question question, List<String> answers) {
+    public void evaluate(Question question, List<String> answers) {
         List<String> correctAnswers = question.getCorrectAnswers();
-        // toto asi neni optimalne :D ale nemozem sortovat answers, lebo List.of dava immutable list
-        // TODO prerobit to + pre textovu odpoved to nefunguje, lebo este treba ignorecase
         Set<String> set1 = new HashSet<>(correctAnswers);
         Set<String> set2 = new HashSet<>(answers);
 
-        if (set1.equals(set2)) {
-            return "Correct!";
+        if (question.isTextInput()) {
+            set1 = Set.of(correctAnswers.getFirst().toLowerCase());
         }
-        return "Wrong."; //TODO vypisat co bola spravna odpoved ak mode = 1
-    }
 
+        if (mode.equals("1")) {
+            if (set1.equals(set2)) {
+                System.out.println("Correct!");
+            }
+
+            if (question.isTextInput()) {
+                System.out.printf("Wrong. Correct answer: %s%n", correctAnswers.getFirst());
+            } else {
+                StringBuilder msg = new StringBuilder("Wrong. Correct answer(s):\n");
+                for (Map.Entry<String, String> element : question.getAllAnswersMap().entrySet()) {
+                    if (correctAnswers.contains(element.getValue())) {
+                        msg.append(String.format("%s) %s%n", element.getKey(), element.getValue()));
+                    }
+                }
+                System.out.println(msg.toString());
+            }
+        }
+    }
 
     private List<String> prompt(Question question) {
         System.out.println();
         System.out.println(question.getText());
-        List<String> shuffledAnswers = new ArrayList<>();
+        Map<String, String> shuffledAnswers = new HashMap<>();
 
         if (question.isSingleAnswer() || question.isMultipleAnswer()) { // ak je otazka aj s moznostami, vypisem ich
-            shuffledAnswers = question.shuffleAnswers();
-            for (int i = 0; i < shuffledAnswers.size(); i++) {
-                char letter = (char) ('a' + i);
-                System.out.println(String.format("%s) %s", letter, shuffledAnswers.get(i)));
+            shuffledAnswers = question.getAllAnswersMap();
+            for (Map.Entry<String, String> element : shuffledAnswers.entrySet()) {
+                System.out.printf("%s) %s%n", element.getKey(), element.getValue());
             }
         }
-        String input = getUserAnswer(); // uzivatel moze zadat akykolvek string
+        String input = getUserAnswer().toLowerCase(); // uzivatel moze zadat akykolvek string
         return getAnswerList(input, shuffledAnswers, question); // vratim odpoved(e) uzivatela ako zoznam
     }
 
-    private List<String> getAnswerList(String input, List<String> shuffledAnswers, Question question) {
-        char maxLetter = (char) ('a' + shuffledAnswers.size() - 1);
+    private List<String> getAnswerList(String input, Map<String, String> shuffledAnswers, Question question) {
 
         if (question.isTextInput()) {
             return List.of(input); // vratim zoznam s jednym prvkom, textovou odpovedou uzivatela
-        } else if (question.isSingleAnswer()) {
-            if (input.length() == 1 && input.charAt(0) >= 'a' && input.charAt(0) <= maxLetter) { // spravny format single odpovede
-                int index = input.charAt(0) - 'a';
-                String chosenOption = shuffledAnswers.get(index);
-                return List.of(chosenOption); // vratim zoznam so znenim moznosti ktoru uzivatel vybral
-            } else {
-                return new ArrayList<>(); // ak je format zly, neudeje sa nic, proste sa vypise, ze zle (pripadne co mala byt spravna odpoved)
-            }
         } else {
-            List<String> splitInput = List.of(input.split(", "));
+            String[] splitInput = input.split("[,\\s;]+");
             List<String> answers = new ArrayList<>();
             for (String ans : splitInput) {
-                if (ans.length() != 1 || ans.charAt(0) < 'a' || ans.charAt(0) > maxLetter) {
+                if (ans.isEmpty()) {
+                    continue;
+                }
+                if (!shuffledAnswers.containsKey(ans)) {
                     return new ArrayList<>(); // // ak je format zly, neudeje sa nic, proste sa vypise, ze zle (pripadne co mala byt spravna odpoved)
                 }
-                int index = ans.charAt(0) - 'a';
-                String chosenOption = shuffledAnswers.get(index);
-                answers.add(chosenOption);
+                answers.add(shuffledAnswers.get(ans));
             }
             return answers; // vratim zoznam so znenim moznosti ktore uzivatel vybal
         }
@@ -113,7 +122,7 @@ public class QuizPrep {
 
         while (true) {
             try {
-                String next = scanner.next();
+                String next = scanner.nextLine();
                 if (next.equalsIgnoreCase("EXIT")) {
                     System.exit(0);
                 }
@@ -130,14 +139,11 @@ public class QuizPrep {
         }
     }
 
-    private String getUserAnswer() { //TODO hadze to do prvej otazky prazdnu odpoved, zatial to neviem odstranit
-        while (true) {
-            String next = scanner.nextLine();
-            if (next.equalsIgnoreCase("EXIT")) {
-                System.exit(0);
-            } else {
-                return next;
-            }
+    private String getUserAnswer() {
+        String next = scanner.nextLine();
+        if (next.equalsIgnoreCase("EXIT")) {
+            System.exit(0);
         }
+        return next;
     }
 }
