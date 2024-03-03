@@ -1,6 +1,6 @@
 {
   "name": "Molecular genetics of plants",
-  "description": "Each question consists of a term from the molecular genetics of plants. Your task is to select all the options that apply to the given term. Zero to all options can be correct. Please enter you answer as letters separated by a comma and a space (for example: a, b, c).",
+  "description": "Each question consists of a term from the molecular genetics of plants. Your task is to select all the options that apply to the given term.",
   "questions": [
     {
       "text": "de novo methylation",
@@ -234,8 +234,10 @@
       "wrongAnswers": [
         "by low copy number",
         "by lowering the fitness",
-        "by disappearing from genome",
         "by activating other TEs"
+      ],
+      "correctAnswers": [
+        "none of the other options"
       ]
     },
     {

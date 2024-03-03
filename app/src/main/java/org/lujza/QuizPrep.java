@@ -21,18 +21,22 @@ public class QuizPrep {
 
         Theme theme = themes.get(Integer.parseInt(topic));
 
-        //TODO vypisat popis temy, nech uzivatel vie, co sa ide diat
+        System.out.println();
+        System.out.println(theme.getDescription());
+
         List<Question> questions = theme.getQuestions();
         Collections.shuffle(questions);
         for (Question question : questions) {
             List<String> answers = prompt(question); // vypisem uzivatelovi otazku a vratim jeho odpoved(e)
             evaluate(question, answers); // skontrolovat ci je odpoved uzivatela spravna
         }
-        //TODO vypisat ze sa vycerpali vsetky otazky
-
-        if (mode.equals("2")) {
+        if (mode.equals("1")) {
+            System.out.println("You have answered all of the questions from this topic.");
+        } else {
             //TODO vypisat vysledny pocet bodov
+
         }
+
     }
 
     public void evaluate(Question question, List<String> answers) {
@@ -47,6 +51,7 @@ public class QuizPrep {
         if (mode.equals("1")) {
             if (set1.equals(set2)) {
                 System.out.println("Correct!");
+                return;
             }
 
             if (question.isTextInput()) {
@@ -56,7 +61,7 @@ public class QuizPrep {
                 for (Map.Entry<String, String> element : question.getAllAnswersMap().entrySet()) {
                     if (correctAnswers.contains(element.getValue())) {
                         msg.append(String.format("%s) %s%n", element.getKey(), element.getValue()));
-                    }
+                    } //TODO prerobit nech to nepise newline po poslednej moznosti
                 }
                 System.out.println(msg);
             }

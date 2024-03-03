@@ -1,6 +1,6 @@
 {
   "name": "The Eight-thousanders",
-  "description": "Each question is about eight-thousenders. Your task is to select all names of the peaks, which are eight-thousanders. Zero to all options can be correct. Please enter you answer as letters separated by a comma and a space (for example: a, b, c).",
+  "description": "Each question is about eight-thousenders. Your task is to select all names of the peaks, which are eight-thousanders.",
   "questions": [
     {
       "text": "Which of these peaks are eight-thousanders?",
@@ -51,10 +51,11 @@
       "wrongAnswers": [
         "Himalchuli",
         "Tirich Mir",
-        "Chogolisa",
-        "Annapurna III"
+        "Chogolisa"
       ],
-      "correctAnswers": []
+      "correctAnswers": [
+        "none of the other options"
+      ]
     },
     {
       "text": "Which of these peaks are eight-thousanders?",
@@ -104,21 +105,23 @@
       "text": "Which of these peaks are eight-thousanders?",
       "wrongAnswers": [
         "Annapurna II",
-        "Distaghil Sar",
         "Nuptse",
         "Khunyang Chhish"
       ],
-      "correctAnswers": []
+      "correctAnswers": [
+        "none of the other options"
+      ]
     },
     {
       "text": "Which of these peaks are eight-thousanders?",
       "wrongAnswers": [
         "Batura Sar",
         "Kanjut Sar",
-        "Molamenqing",
         "Gurla Mandhata"
       ],
-      "correctAnswers": []
+      "correctAnswers": [
+        "none of the other options"
+      ]
     }
 
   ]
