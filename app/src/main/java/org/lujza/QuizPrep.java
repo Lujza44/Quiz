@@ -4,24 +4,20 @@ import java.io.IOException;
 import java.util.*;
 
 public class QuizPrep {
-    private Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner = new Scanner(System.in);
     private String mode;
-    private String topic;
-    private JsonReader jsonReader = new JsonReader("data");
+    private final JsonReader jsonReader = new JsonReader("data");
 
-    private PointsCounter pointsCounter = new PointsCounter();
+    private final PointsCounter pointsCounter = new PointsCounter();
 
     public void startQuiz() throws IOException {
 
-        mode = prompt("""
-                Welcome to the application, that will help you prepare for your exams!
-                Application has two modes: practice mode and a test simulation.
-                Do you want to practice or simulate a test? Enter 1 for practice mode or 2 for a test simulation.""", 2);
+        mode = prompt();
 
         //TODO vypisat temy indexovane od 1, nie od 0
         List<Theme> themes = jsonReader.load();
 
-        topic = prompt(themes);
+        String topic = prompt(themes);
 
         Theme theme = themes.get(Integer.parseInt(topic));
 
@@ -62,7 +58,7 @@ public class QuizPrep {
                         msg.append(String.format("%s) %s%n", element.getKey(), element.getValue()));
                     }
                 }
-                System.out.println(msg.toString());
+                System.out.println(msg);
             }
         }
     }
@@ -105,15 +101,17 @@ public class QuizPrep {
     private String prompt(List<Theme> themes) {
         System.out.println();
         for (int i = 0; i < themes.size(); i++) {
-            System.out.println(String.format("%s. %s", i, themes.get(i).getName()));
+            System.out.printf("%s. %s%n", i, themes.get(i).getName());
         }
         return getUserChoice(themes.size() - 1);
     }
 
-    private String prompt(String text, int maxOption) {
-        System.out.println();
-        System.out.println(text);
-        return getUserChoice(maxOption);
+    private String prompt() {
+        System.out.println("""
+                Welcome to the application, that will help you prepare for your exams!
+                Application has two modes: practice mode and a test simulation.
+                Do you want to practice or simulate a test? Enter 1 for practice mode or 2 for a test simulation.""");
+        return getUserChoice(2);
     }
 
     private String getUserChoice(int maxOption) {

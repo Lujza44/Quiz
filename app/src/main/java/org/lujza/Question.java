@@ -1,7 +1,6 @@
 package org.lujza;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Question {
     private String text;
