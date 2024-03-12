@@ -1,8 +1,10 @@
 {
+  "type": "multi",
   "name": "The Eight-thousanders",
   "description": "Each question is about eight-thousenders. Your task is to select all names of the peaks, which are eight-thousanders.",
   "questions": [
     {
+      "type": "multi",
       "text": "Which of these peaks are eight-thousanders?",
       "wrongAnswers": [
         "Kongur Tagh",
@@ -14,6 +16,7 @@
       ]
     },
     {
+      "type": "multi",
       "text": "Which of these peaks are eight-thousanders?",
       "wrongAnswers": [
         "Gangkhar Puensum",
@@ -25,6 +28,7 @@
       ]
     },
     {
+      "type": "multi",
       "text": "Which of these peaks are eight-thousanders?",
       "wrongAnswers": [
         "Gangapurna",
@@ -36,6 +40,7 @@
       ]
     },
     {
+      "type": "multi",
       "text": "Which of these peaks are eight-thousanders?",
       "wrongAnswers": [
         "Gongga Shan (Minya Konka)",
@@ -47,6 +52,7 @@
       ]
     },
     {
+      "type": "multi",
       "text": "Which of these peaks are eight-thousanders?",
       "wrongAnswers": [
         "Himalchuli",
@@ -58,6 +64,7 @@
       ]
     },
     {
+      "type": "multi",
       "text": "Which of these peaks are eight-thousanders?",
       "wrongAnswers": [
         "Jannu / Kumbhakarna",
@@ -69,6 +76,7 @@
       ]
     },
     {
+      "type": "multi",
       "text": "Which of these peaks are eight-thousanders?",
       "wrongAnswers": [
         "Rakaposhi"
@@ -80,6 +88,7 @@
       ]
     },
     {
+      "type": "multi",
       "text": "Which of these peaks are eight-thousanders?",
       "wrongAnswers": [
         "Shispare",
@@ -91,6 +100,7 @@
       ]
     },
     {
+      "type": "multi",
       "text": "Which of these peaks are eight-thousanders?",
       "wrongAnswers": [
         "Ngadi Chuli",
@@ -102,6 +112,7 @@
       ]
     },
     {
+      "type": "multi",
       "text": "Which of these peaks are eight-thousanders?",
       "wrongAnswers": [
         "Annapurna II",
@@ -113,6 +124,7 @@
       ]
     },
     {
+      "type": "multi",
       "text": "Which of these peaks are eight-thousanders?",
       "wrongAnswers": [
         "Batura Sar",
@@ -123,6 +135,5 @@
         "none of the other options"
       ]
     }
-
   ]
 }

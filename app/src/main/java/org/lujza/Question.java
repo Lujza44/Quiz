@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Question {
     private String text;
+    private String type;
     private List<String> wrongAnswers = new ArrayList<>();
     private List<String> correctAnswers;
 
@@ -43,15 +44,15 @@ public class Question {
     }
 
     public boolean isTextInput() {
-        return wrongAnswers.isEmpty() && correctAnswers.size() == 1;
+        return this.type.equals("text");
     }
 
     public boolean isSingleAnswer() {
-        return !wrongAnswers.isEmpty() && correctAnswers.size() == 1;
+        return this.type.equals("single");
     }
 
     public boolean isMultipleAnswer() {
         //return !wrongChoices.isEmpty() && correctAnswers.size() > 1;
-        return correctAnswers.size() != 1;
+        return this.type.equals("multi");
     }
 }

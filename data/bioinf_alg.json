@@ -3,6 +3,7 @@
   "description": "Each question consists of the name of one bioinformatics algorithm. Your task is to choose the option that describes what the given algorithm is for. Always only one option is correct.",
   "questions": [
     {
+      "type": "single",
       "text": "Hamming Distance",
       "wrongAnswers": [
         "MSA scoring",
@@ -12,6 +13,7 @@
       "correctAnswers": ["Pairwise alignment scoring"]
     },
     {
+      "type": "single",
       "text": "Edit Distance",
       "wrongAnswers": [
         "Speeding up database searches",
@@ -21,6 +23,7 @@
       "correctAnswers": ["Pairwise alignment scoring"]
     },
     {
+      "type": "single",
       "text": "Operation-Weighted Edit Distance",
       "wrongAnswers": [
         "Local pairwise Alignment",
@@ -30,6 +33,7 @@
       "correctAnswers": ["Pairwise alignment scoring"]
     },
     {
+      "type": "single",
       "text": "Alphabet-Wighted Edit Distance",
       "wrongAnswers": [
         "Multiple Sequence Alignment",
@@ -39,6 +43,7 @@
       "correctAnswers": ["Pairwise alignment scoring"]
     },
     {
+      "type": "single",
       "text": "Needleman-Wunsch",
       "wrongAnswers": [
         "Pairwise alignment scoring",
@@ -48,6 +53,7 @@
       "correctAnswers": ["Global pairwise Alignment"]
     },
     {
+      "type": "single",
       "text": "Smith-Waterman",
       "wrongAnswers": [
         "Multiple Sequence Alignment",
@@ -57,6 +63,7 @@
       "correctAnswers": ["Local pairwise Alignment"]
     },
     {
+      "type": "single",
       "text": "Minimum Entropy",
       "wrongAnswers": [
         "Construction of a phylogenetic tree",
@@ -66,6 +73,7 @@
       "correctAnswers": ["MSA scoring"]
     },
     {
+      "type": "single",
       "text": "Sum of Paris",
       "wrongAnswers": [
         "Protein structure similarity determination",
@@ -75,6 +83,7 @@
       "correctAnswers": ["MSA scoring"]
     },
     {
+      "type": "single",
       "text": "Multidimensional Dynamic Programming",
       "wrongAnswers": [
         "Alignment search using HMM",
@@ -84,6 +93,7 @@
       "correctAnswers": ["Multiple Sequence Alignment"]
     },
     {
+      "type": "single",
       "text": "Star Alignment",
       "wrongAnswers": [
         "Pairwise alignment scoring",
@@ -93,6 +103,7 @@
       "correctAnswers": ["Multiple Sequence Alignment"]
     },
     {
+      "type": "single",
       "text": "Feng & Doolitle",
       "wrongAnswers": [
         "Protein structure similarity determination",
@@ -102,6 +113,7 @@
       "correctAnswers": ["Multiple Sequence Alignment"]
     },
     {
+      "type": "single",
       "text": "CLUSTAL W",
       "wrongAnswers": [
         "Determination of the parameters of HMM",
@@ -111,6 +123,7 @@
       "correctAnswers": ["Multiple Sequence Alignment"]
     },
     {
+      "type": "single",
       "text": "T-Coffee",
       "wrongAnswers": [
         "Protein structure similarity determination",
@@ -120,6 +133,7 @@
       "correctAnswers": ["Multiple Sequence Alignment"]
     },
     {
+      "type": "single",
       "text": "Barton & Sternberg",
       "wrongAnswers": [
         "Alignment search using HMM",
@@ -129,6 +143,7 @@
       "correctAnswers": ["Multiple Sequence Alignment"]
     },
     {
+      "type": "single",
       "text": "DIALIGN",
       "wrongAnswers": [
         "Search for a motif",
@@ -138,6 +153,7 @@
       "correctAnswers": ["Multiple Sequence Alignment"]
     },
     {
+      "type": "single",
       "text": "MAFFT",
       "wrongAnswers": [
         "Speeding up database searches",
@@ -147,6 +163,7 @@
       "correctAnswers": ["Multiple Sequence Alignment"]
     },
     {
+      "type": "single",
       "text": "MUSCLE",
       "wrongAnswers": [
         "Pairwise alignment scoring",
@@ -156,6 +173,7 @@
       "correctAnswers": ["Multiple Sequence Alignment"]
     },
     {
+      "type": "single",
       "text": "FASTA",
       "wrongAnswers": [
         "Search for a motif",
@@ -165,6 +183,7 @@
       "correctAnswers": ["Speeding up database searches"]
     },
     {
+      "type": "single",
       "text": "BLAST",
       "wrongAnswers": [
         "Construction of a phylogenetic tree",
@@ -174,6 +193,7 @@
       "correctAnswers": ["Speeding up database searches"]
     },
     {
+      "type": "single",
       "text": "BLAT",
       "wrongAnswers": [
         "Multiple Sequence Alignment",
@@ -183,6 +203,7 @@
       "correctAnswers": ["Speeding up database searches"]
     },
     {
+      "type": "single",
       "text": "SSAHA",
       "wrongAnswers": [
         "Protein structure similarity determination",
@@ -192,6 +213,7 @@
       "correctAnswers": ["Speeding up database searches"]
     },
     {
+      "type": "single",
       "text": "FT#N",
       "wrongAnswers": [
         "Multiple Sequence Alignment",
@@ -201,6 +223,7 @@
       "correctAnswers": ["Speeding up database searches"]
     },
     {
+      "type": "single",
       "text": "Viterbi Algorithm",
       "wrongAnswers": [
         "Pairwise alignment scoring",
@@ -210,6 +233,7 @@
       "correctAnswers": ["Alignment search using HMM"]
     },
     {
+      "type": "single",
       "text": "Forward Algorithm",
       "wrongAnswers": [
         "Multiple Sequence Alignment",
@@ -219,6 +243,7 @@
       "correctAnswers": ["Alignment search using HMM"]
     },
     {
+      "type": "single",
       "text": "Backward Algorithm",
       "wrongAnswers": [
         "Construction of a phylogenetic tree",
@@ -228,6 +253,7 @@
       "correctAnswers": ["Alignment search using HMM"]
     },
     {
+      "type": "single",
       "text": "Posterior Decoding",
       "wrongAnswers": [
         "Probabilistic search for suboptimal alignments",
@@ -237,6 +263,7 @@
       "correctAnswers": ["Alignment search using HMM"]
     },
     {
+      "type": "single",
       "text": "Baum-Welch",
       "wrongAnswers": [
         "Construction of a phylogenetic tree",
@@ -246,6 +273,7 @@
       "correctAnswers": ["Determination of the parameters of HMM"]
     },
     {
+      "type": "single",
       "text": "Waterman-Eggert",
       "wrongAnswers": [
         "Protein structure similarity determination",
@@ -255,6 +283,7 @@
       "correctAnswers": ["Probabilistic search for suboptimal alignments"]
     },
     {
+      "type": "single",
       "text": "PSSM",
       "wrongAnswers": [
         "Multiple Sequence Alignment",
@@ -264,6 +293,7 @@
       "correctAnswers": ["Search for a motif"]
     },
     {
+      "type": "single",
       "text": "PSI-BLAST",
       "wrongAnswers": [
         "Protein structure similarity determination",
@@ -273,6 +303,7 @@
       "correctAnswers": ["Search for a motif"]
     },
     {
+      "type": "single",
       "text": "Profile HMM",
       "wrongAnswers": [
         "Alignment search using HMM",
@@ -282,6 +313,7 @@
       "correctAnswers": ["Search for a motif"]
     },
     {
+      "type": "single",
       "text": "UPGMA",
       "wrongAnswers": [
         "Protein structure similarity determination",
@@ -291,6 +323,7 @@
       "correctAnswers": ["Construction of a phylogenetic tree"]
     },
     {
+      "type": "single",
       "text": "Neighbor Joining",
       "wrongAnswers": [
         "Protein structure similarity determination",
@@ -300,6 +333,7 @@
       "correctAnswers": ["Construction of a phylogenetic tree"]
     },
     {
+      "type": "single",
       "text": "Maximal Parsimony",
       "wrongAnswers": [
         "MSA scoring",
@@ -309,6 +343,7 @@
       "correctAnswers": ["Construction of a phylogenetic tree"]
     },
     {
+      "type": "single",
       "text": "DALI",
       "wrongAnswers": [
         "Local pairwise alignment",
@@ -318,6 +353,7 @@
       "correctAnswers": ["Protein structure similarity determination"]
     },
     {
+      "type": "single",
       "text": "CE",
       "wrongAnswers": [
         "MSA scoring",
@@ -327,6 +363,7 @@
       "correctAnswers": ["Protein structure similarity determination"]
     },
     {
+      "type": "single",
       "text": "SSAP",
       "wrongAnswers": [
         "MSA scoring",
@@ -336,6 +373,7 @@
       "correctAnswers": ["Protein structure similarity determination"]
     },
     {
+      "type": "single",
       "text": "PROSUP, STRUCTAL",
       "wrongAnswers": [
         "Speeding up database searches",
@@ -345,6 +383,7 @@
       "correctAnswers": ["Protein structure similarity determination"]
     },
     {
+      "type": "single",
       "text": "MAMMOTH",
       "wrongAnswers": [
         "Alignment search using HMM",
@@ -354,6 +393,7 @@
       "correctAnswers": ["Protein structure similarity determination"]
     },
     {
+      "type": "single",
       "text": "FATCAT",
       "wrongAnswers": [
         "Multiple Sequence Alignment",

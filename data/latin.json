@@ -3,6 +3,7 @@
   "description": "Each question consists of one latin phrase. Your task is to choose the best possible translation of the given phrase from the given options. Always only one option is correct.",
     "questions": [
       {
+        "type": "single",
         "text": "de novo",
         "wrongAnswers": [
           "at the end",
@@ -12,6 +13,7 @@
         "correctAnswers": ["from the new"]
       },
       {
+        "type": "single",
         "text": "ex vivo",
         "wrongAnswers": [
           "inside a living organism",
@@ -21,6 +23,7 @@
         "correctAnswers": ["outside a living organism"]
       },
       {
+        "type": "single",
         "text": "in vitro",
         "wrongAnswers": [
           "inside a living organism",
@@ -30,6 +33,7 @@
         "correctAnswers": ["outside a living organism"]
       },
       {
+        "type": "single",
         "text": "in vivo",
         "wrongAnswers": [
           "outside a living organism",
@@ -39,6 +43,7 @@
         "correctAnswers": ["inside a living organism"]
       },
       {
+        "type": "single",
         "text": "in situ",
         "wrongAnswers": [
           "outside a living organism",
@@ -48,6 +53,7 @@
         "correctAnswers": ["in the original place"]
       },
       {
+        "type": "single",
         "text": "in silico",
         "wrongAnswers": [
           "after life",
@@ -57,6 +63,7 @@
         "correctAnswers": ["by computer simulation"]
       },
       {
+        "type": "single",
         "text": "Acta non verba",
         "wrongAnswers": [
           "Words not actions",
@@ -66,6 +73,7 @@
         "correctAnswers": ["Actions, not words"]
       },
       {
+        "type": "single",
         "text": "Amor vincit omnia",
         "wrongAnswers": [
           "Hope binds everything",
@@ -75,6 +83,7 @@
         "correctAnswers": ["Love conquers all"]
       },
       {
+        "type": "single",
         "text": "Audere est faucere",
         "wrongAnswers": [
           "To wait is to loose",
@@ -84,6 +93,7 @@
         "correctAnswers": ["To dare is to do"]
       },
       {
+        "type": "single",
         "text": "Veni, vidi, vici",
         "wrongAnswers": [
           "I heard, I observed, I learned",
@@ -93,6 +103,7 @@
         "correctAnswers": ["I came, I saw, I conquered"]
       },
       {
+        "type": "single",
         "text": "Non ducor, duco",
         "wrongAnswers": [
           "I do not follow, I pursue",
@@ -102,6 +113,7 @@
         "correctAnswers": ["I am not led, I lead"]
       },
       {
+        "type": "single",
         "text": "Bona fide",
         "wrongAnswers": [
           "With honest intention",
@@ -111,6 +123,7 @@
         "correctAnswers": ["In good faith"]
       },
       {
+        "type": "single",
         "text": "Cras es noster",
         "wrongAnswers": [
           "Yesterday was ours",
@@ -120,6 +133,7 @@
         "correctAnswers": ["Tomorrow, be ours"]
       },
       {
+        "type": "single",
         "text": "Dictum factum",
         "wrongAnswers": [
           "Promised and forgotten",
@@ -129,6 +143,7 @@
         "correctAnswers": ["What is said is done"]
       },
       {
+        "type": "single",
         "text": "Dum vita est, spes est",
         "wrongAnswers": [
           "While there is time, there is possibility",
@@ -138,6 +153,7 @@
         "correctAnswers": ["While there is life, there is hope"]
       },
       {
+        "type": "single",
         "text": "Carpe diem",
         "wrongAnswers": [
           "Cherish the night",
@@ -147,6 +163,7 @@
         "correctAnswers": ["Seize the day"]
       },
       {
+        "type": "single",
         "text": "Familia supra omnia",
         "wrongAnswers": [
           "Honor above all",
@@ -156,6 +173,7 @@
         "correctAnswers": ["Family over everything"]
       },
       {
+        "type": "single",
         "text": "Fons vitae caritas",
         "wrongAnswers": [
           "Hope is the foundation of existence",
@@ -165,6 +183,7 @@
         "correctAnswers": ["Love is the fountain of life"]
       },
       {
+        "type": "single",
         "text": "Sapientia potentia est",
         "wrongAnswers": [
           "Wisdom is strength",
@@ -174,6 +193,7 @@
         "correctAnswers": ["Knowledge is power"]
       },
       {
+        "type": "single",
         "text": "Pax vobiscum",
         "wrongAnswers": [
           "Strength be within you",
@@ -183,6 +203,7 @@
         "correctAnswers": ["Peace be with you"]
       },
       {
+        "type": "single",
         "text": "Fortiter et fideliter",
         "wrongAnswers": [
           "Strongly and wisely",
@@ -192,6 +213,7 @@
         "correctAnswers": ["Bravely and faithfully"]
       },
       {
+        "type": "single",
         "text": "Omne initium difficile est",
         "wrongAnswers": [
           "Every end is inevitable",
@@ -201,6 +223,7 @@
         "correctAnswers": ["Every beginning is difficult"]
       },
       {
+        "type": "single",
         "text": "Sic vita est",
         "wrongAnswers": [
           "Thus it begins",
@@ -210,6 +233,7 @@
         "correctAnswers": ["Such is life"]
       },
       {
+        "type": "single",
         "text": "Sic infit",
         "wrongAnswers": [
           "So it concludes",
@@ -219,6 +243,7 @@
         "correctAnswers": ["So it begins"]
       },
       {
+        "type": "single",
         "text": "Igne natura renovatur integra",
         "wrongAnswers": [
           "By water, life is cleansed",
@@ -228,6 +253,7 @@
         "correctAnswers": ["Through fire, nature is reborn whole"]
       },
       {
+        "type": "single",
         "text": "Ordo ab chao",
         "wrongAnswers": [
           "Peace from conflict",
@@ -237,6 +263,7 @@
         "correctAnswers": ["Order from chaos"]
       },
       {
+        "type": "single",
         "text": "Libertas perfundet omnia luce",
         "wrongAnswers": [
           "Darkness shall cover the earth",
@@ -246,6 +273,7 @@
         "correctAnswers": ["Freedom will flood all things with light"]
       },
       {
+        "type": "single",
         "text": "Verba volant, scripta manent",
         "wrongAnswers": [
           "Promises are forgotten, actions endure",
@@ -255,6 +283,7 @@
         "correctAnswers": ["Words fly away, writings remain"]
       },
       {
+        "type": "single",
         "text": "Grandescunt aucta labore",
         "wrongAnswers": [
           "Small beginnings lead to great endings",
@@ -264,6 +293,7 @@
         "correctAnswers": ["With hard work, all things increase and grow"]
       },
       {
+        "type": "single",
         "text": "Ad meliora",
         "wrongAnswers": [
           "Away from the past",
@@ -273,6 +303,7 @@
         "correctAnswers": ["Towards better things"]
       },
       {
+        "type": "single",
         "text": "Calamus gladio fortior",
         "wrongAnswers": [
           "The shield is stronger than the lance",
@@ -282,6 +313,7 @@
         "correctAnswers": ["The pen is mightier than the sword"]
       },
       {
+        "type": "single",
         "text": "Vacate et scire",
         "wrongAnswers": [
           "Leave and learn",
@@ -291,6 +323,7 @@
         "correctAnswers": ["Be still and know"]
       },
       {
+        "type": "single",
         "text": "In absentia lucis, tenebrae vincunt",
         "wrongAnswers": [
           "Where there is hope, despair wins",
@@ -300,6 +333,7 @@
         "correctAnswers": ["In the absence of light, darkness prevails"]
       },
       {
+        "type": "single",
         "text": "Ego te provoco",
         "wrongAnswers": [
           "I forgive you",
@@ -309,6 +343,7 @@
         "correctAnswers": ["I challenge you"]
       },
       {
+        "type": "single",
         "text": "Quam bene non quantum",
         "wrongAnswers": [
           "The quality, not the quantity",
@@ -318,6 +353,7 @@
         "correctAnswers": ["How well, not how much"]
       },
       {
+        "type": "single",
         "text": "Magna est vis consuetudinis",
         "wrongAnswers": [
           "The power of nature is immense",
@@ -327,6 +363,7 @@
         "correctAnswers": ["Great is the power of habit"]
       },
       {
+        "type": "single",
         "text": "Non loqui sed facere",
         "wrongAnswers": [
           "Not to promise but to prove",
@@ -336,6 +373,7 @@
         "correctAnswers": ["No talk but action"]
       },
       {
+        "type": "single",
         "text": "Bono malum superate",
         "wrongAnswers": [
           "Surpass the bad with the better",
@@ -345,6 +383,7 @@
         "correctAnswers": ["Overcome evil with good"]
       },
       {
+        "type": "single",
         "text": "Qui totum vult totum perdit",
         "wrongAnswers": [
           "He who seeks peace finds war",
@@ -354,6 +393,7 @@
         "correctAnswers": ["He who wants everything loses everything"]
       },
       {
+        "type": "single",
         "text": "Ad victoriam",
         "wrongAnswers": [
           "Towards defeat",
