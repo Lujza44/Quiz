@@ -34,15 +34,6 @@ public class Question {
         return answersToMap();
     }
 
-    // toto mozno pre tvoju osobnu kontrolu, aby si nemusela kontrolovat manualne tvoj JSON,
-    // ci mas spravne zadefinovanu otazku
-    public boolean isValid() {
-        // kontrola ze ci napr. sedia odpovede v correctAnswers s tym co mas definovane v choices...
-        // ci nahodou nie je viac correctAnswers ako choices, atd...
-        // to mi len tak napadlo
-        return true;
-    }
-
     public boolean isTextInput() {
         return this.type.equals("text");
     }
@@ -54,5 +45,13 @@ public class Question {
     public boolean isMultipleAnswer() {
         //return !wrongChoices.isEmpty() && correctAnswers.size() > 1;
         return this.type.equals("multi");
+    }
+
+    // toto mozno pre osobnu kontrolu, aby sa nemusel kontrolovat manualne JSON,
+    public boolean isValid() {
+        // kontrola ze ci napr. sedia odpovede v correctAnswers s tym co mas definovane v choices...
+        // ci nahodou nie je viac correctAnswers ako choices, atd...
+        // to mi len tak napadlo
+        return true;
     }
 }

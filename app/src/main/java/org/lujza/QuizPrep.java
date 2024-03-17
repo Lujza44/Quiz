@@ -31,40 +31,45 @@ public class QuizPrep {
             evaluate(question, answers); // skontrolovat ci je odpoved uzivatela spravna
         }
         if (mode.equals("1")) {
-            System.out.println("You have answered all of the questions from this topic.");
+            System.out.println("\nYou have answered all of the questions from this topic.");
         } else {
-            //TODO vypisat vysledny pocet bodov
-
+            System.out.println("\nYou have answered all of the questions in this test.\nYou scored " + pointsCounter.getPoints() + " points!");
+            // TODO vypisat znamku, aky bol celkovy pocet bodov atd
         }
 
     }
 
-    public void evaluate(Question question, List<String> answers) {
+    private void evaluate(Question question, List<String> answers) { // na vstupe dostavam pole odpovedi (cele ich znenie), ktore zadal user
         List<String> correctAnswers = question.getCorrectAnswers();
         Set<String> set1 = new HashSet<>(correctAnswers);
         Set<String> set2 = new HashSet<>(answers);
 
-        if (question.isTextInput()) {
+        if (question.isTextInput()) { // ak textova odpoved, len prerobim odpoved na lowercase
             set1 = Set.of(correctAnswers.getFirst().toLowerCase());
         }
 
-        if (mode.equals("1")) {
-            if (set1.equals(set2)) {
-                System.out.println("Correct!");
-                return;
-            }
 
-            if (question.isTextInput()) {
-                System.out.printf("Wrong. Correct answer: %s%n", correctAnswers.getFirst());
-            } else {
-                StringBuilder msg = new StringBuilder("Wrong. Correct answer(s):\n");
-                for (Map.Entry<String, String> element : question.getAllAnswersMap().entrySet()) {
-                    if (correctAnswers.contains(element.getValue())) {
-                        msg.append(String.format("%s) %s%n", element.getKey(), element.getValue()));
-                    } //TODO prerobit nech to nepise newline po poslednej moznosti
+        //TODO hlasenia o spravnosti odpovede sa maju vypisovat iba ked mod = 1
+
+        if (set1.equals(set2)) { // ak su mnozina odpovedi usera a mnozina spravnych odpovedi rovnake
+            System.out.println("Correct!");
+            pointsCounter.addPoints(question);
+            return;
+        }
+
+        if (question.isTextInput()) { // ak nespravna textova odpoved, vypisem spravnu
+            System.out.printf("Wrong. Correct answer: %s%n", correctAnswers.getFirst());
+        } else { // ak nespravny choice, vypisem spravne moznosti
+            StringBuilder msg = new StringBuilder("Wrong. Correct answer(s):\n");
+            for (Map.Entry<String, String> element : question.getAllAnswersMap().entrySet()) {
+                if (correctAnswers.contains(element.getValue())) {
+                    msg.append(String.format("%s) %s%n", element.getKey(), element.getValue()));
                 }
-                System.out.println(msg);
             }
+            msg.setLength(msg.length() - 1);
+            System.out.println(msg);
+
+            pointsCounter.addPartialPoints(set1, set2); // TODO tu musim predavat theme ako argument teraz :(
         }
     }
 
