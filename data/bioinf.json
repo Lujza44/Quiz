@@ -1,6 +1,8 @@
 {
   "name": "Bioinformatic Acronyms",
   "description": "Each question consists of one bioinformatics acronym. Your task is to write an explanation of the acronym.",
+  "scoringText": "If you write the correct answer, you get 3 points. Otherwise, you get 0 points.",
+  "maxPointsPerQuestion": 3,
   "questions": [
     {
       "type": "text",

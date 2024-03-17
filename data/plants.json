@@ -1,7 +1,9 @@
 {
-  "type": "multi",
   "name": "Molecular genetics of plants",
   "description": "Each question consists of a term from the molecular genetics of plants. Your task is to select all the options that apply to the given term.",
+  "scoringText": "If you select exactly the correct answers, you get 3 points. If you make one mistake, you get 1 point. If you make two or more mistakes, you get 0 points.",
+  "maxPointsPerQuestion": 3,
+  "partialPointsPerQuestion": 1,
   "questions": [
     {
       "type": "multi",

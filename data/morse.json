@@ -1,161 +1,190 @@
 {
   "name": "Morse Code",
   "description": "Each question consists of one letter. Your task is to write the given letter in Morse code.",
+  "scoringText": "If you write the correct answer, you get 3 points. Otherwise, you get 0 points.",
+  "maxPointsPerQuestion": 3,
   "questions": [
     {
       "type": "text",
       "text": "A",
-      "correctAnswers": [".-"]
+      "correctAnswers": [
+        ".-"
+      ]
     },
-    
     {
       "type": "text",
       "text": "B",
-      "correctAnswers": ["-..."]
+      "correctAnswers": [
+        "-..."
+      ]
     },
-    
     {
       "type": "text",
       "text": "C",
-      "correctAnswers": ["-.-."]
+      "correctAnswers": [
+        "-.-."
+      ]
     },
-    
     {
       "type": "text",
       "text": "D",
-      "correctAnswers": ["-.."]
+      "correctAnswers": [
+        "-.."
+      ]
     },
-    
     {
       "type": "text",
       "text": "E",
-      "correctAnswers": ["."]
+      "correctAnswers": [
+        "."
+      ]
     },
-    
     {
       "type": "text",
       "text": "F",
-      "correctAnswers": ["..-."]
+      "correctAnswers": [
+        "..-."
+      ]
     },
-    
     {
       "type": "text",
       "text": "G",
-      "correctAnswers": ["--."]
+      "correctAnswers": [
+        "--."
+      ]
     },
-    
     {
       "type": "text",
       "text": "H",
-      "correctAnswers": ["...."]
+      "correctAnswers": [
+        "...."
+      ]
     },
-    
     {
       "type": "text",
       "text": "I",
-      "correctAnswers": [".."]
+      "correctAnswers": [
+        ".."
+      ]
     },
-    
     {
       "type": "text",
       "text": "J",
-      "correctAnswers": [".---"]
+      "correctAnswers": [
+        ".---"
+      ]
     },
-    
     {
       "type": "text",
       "text": "K",
-      "correctAnswers": ["-.-"]
+      "correctAnswers": [
+        "-.-"
+      ]
     },
-    
     {
       "type": "text",
       "text": "L",
-      "correctAnswers": [".-.."]
+      "correctAnswers": [
+        ".-.."
+      ]
     },
-    
     {
       "type": "text",
       "text": "M",
-      "correctAnswers": ["--"]
+      "correctAnswers": [
+        "--"
+      ]
     },
-    
     {
       "type": "text",
       "text": "N",
-      "correctAnswers": ["-."]
+      "correctAnswers": [
+        "-."
+      ]
     },
-    
     {
       "type": "text",
       "text": "O",
-      "correctAnswers": ["---"]
+      "correctAnswers": [
+        "---"
+      ]
     },
-    
     {
       "type": "text",
       "text": "P",
-      "correctAnswers": [".--."]
+      "correctAnswers": [
+        ".--."
+      ]
     },
-    
     {
       "type": "text",
       "text": "Q",
-      "correctAnswers": ["--.-"]
+      "correctAnswers": [
+        "--.-"
+      ]
     },
-    
     {
       "type": "text",
       "text": "R",
-      "correctAnswers": [".-."]
+      "correctAnswers": [
+        ".-."
+      ]
     },
-    
     {
       "type": "text",
       "text": "S",
-      "correctAnswers": ["..."]
+      "correctAnswers": [
+        "..."
+      ]
     },
-    
     {
       "type": "text",
       "text": "T",
-      "correctAnswers": ["-"]
+      "correctAnswers": [
+        "-"
+      ]
     },
-    
     {
       "type": "text",
       "text": "U",
-      "correctAnswers": ["..-"]
+      "correctAnswers": [
+        "..-"
+      ]
     },
-    
     {
       "type": "text",
       "text": "V",
-      "correctAnswers": ["...-"]
+      "correctAnswers": [
+        "...-"
+      ]
     },
-    
     {
       "type": "text",
       "text": "W",
-      "correctAnswers": [".--"]
+      "correctAnswers": [
+        ".--"
+      ]
     },
-    
     {
       "type": "text",
       "text": "X",
-      "correctAnswers": ["-..-"]
+      "correctAnswers": [
+        "-..-"
+      ]
     },
-    
     {
       "type": "text",
       "text": "Y",
-      "correctAnswers": ["-.--"]
+      "correctAnswers": [
+        "-.--"
+      ]
     },
-    
     {
       "type": "text",
       "text": "Z",
-      "correctAnswers": ["--.."]
+      "correctAnswers": [
+        "--.."
+      ]
     }
- ]
+  ]
 }

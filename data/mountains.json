@@ -1,7 +1,9 @@
 {
-  "type": "multi",
   "name": "The Eight-thousanders",
   "description": "Each question is about eight-thousenders. Your task is to select all names of the peaks, which are eight-thousanders.",
+  "scoringText": "If you select exactly the correct answers, you get 3 points. If you make one mistake, you get 1 point. If you make two or more mistakes, you get 0 points.",
+  "maxPointsPerQuestion": 3,
+  "partialPointsPerQuestion": 1,
   "questions": [
     {
       "type": "multi",
@@ -55,18 +57,6 @@
       "type": "multi",
       "text": "Which of these peaks are eight-thousanders?",
       "wrongAnswers": [
-        "Himalchuli",
-        "Tirich Mir",
-        "Chogolisa"
-      ],
-      "correctAnswers": [
-        "none of the other options"
-      ]
-    },
-    {
-      "type": "multi",
-      "text": "Which of these peaks are eight-thousanders?",
-      "wrongAnswers": [
         "Jannu / Kumbhakarna",
         "Masherbrum (K1)"
       ],
@@ -109,30 +99,6 @@
       ],
       "correctAnswers": [
         "Dhaulagiri I"
-      ]
-    },
-    {
-      "type": "multi",
-      "text": "Which of these peaks are eight-thousanders?",
-      "wrongAnswers": [
-        "Annapurna II",
-        "Nuptse",
-        "Khunyang Chhish"
-      ],
-      "correctAnswers": [
-        "none of the other options"
-      ]
-    },
-    {
-      "type": "multi",
-      "text": "Which of these peaks are eight-thousanders?",
-      "wrongAnswers": [
-        "Batura Sar",
-        "Kanjut Sar",
-        "Gurla Mandhata"
-      ],
-      "correctAnswers": [
-        "none of the other options"
       ]
     }
   ]

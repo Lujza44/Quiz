@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Update jsons">
+    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Add question types to json files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/PointsCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/PointsCounter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/QuizPrep.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/QuizPrep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Theme.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Theme.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/bioinf.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/bioinf.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/bioinf_alg.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/bioinf_alg.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/latin.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/latin.json" afterDir="false" />
@@ -259,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709495508072</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Add question types to json files">
+      <option name="closed" value="true" />
+      <created>1710274130732</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1710274130732</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,6 +297,7 @@
     <MESSAGE value="Modify evaluation" />
     <MESSAGE value="Remove some warnings" />
     <MESSAGE value="Update jsons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update jsons" />
+    <MESSAGE value="Add question types to json files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add question types to json files" />
   </component>
 </project>

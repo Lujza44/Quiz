@@ -1,6 +1,8 @@
 {
   "name": "Bioinformatic Algorithms",
   "description": "Each question consists of the name of one bioinformatics algorithm. Your task is to choose the option that describes what the given algorithm is for. Always only one option is correct.",
+  "scoringText": "If you select the correct answer, you get 2 points. Otherwise you get 0 points.",
+  "maxPointsPerQuestion": 2,
   "questions": [
     {
       "type": "single",
