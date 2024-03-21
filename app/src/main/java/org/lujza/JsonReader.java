@@ -23,7 +23,8 @@ public class JsonReader {
         for (File file : Objects.requireNonNull(directory.listFiles())) {
             Gson gson = new Gson();
             FileReader reader = new FileReader(file);
-            Theme theme = gson.fromJson(reader, Theme.class);
+            Theme theme = gson.fromJson(reader, Theme.class); // vsetko do objektu theme
+            theme.getQuestions().forEach(question -> question.setTheme(theme)); // z objektu theme otazky -> do kazdej theme
             list.add(theme);
         }
         Collections.sort(list);

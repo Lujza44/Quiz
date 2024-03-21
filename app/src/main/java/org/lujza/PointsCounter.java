@@ -8,14 +8,10 @@ public class PointsCounter {
     private int points = 0;
 
     public void addPoints(Question question) {
-        if (question.isTextInput() || question.isMultipleAnswer()) {
-            points += 3;
-        } else {
-            points += 2;
-        }
+        points += question.getTheme().getMaxPointsPerQuestion();
     }
 
-    public void addPartialPoints(Set<String> set1, Set<String> set2, Theme theme) { // set1 = correctAnswers, set2 = userAnswers
+    public void addPartialPoints(Set<String> set1, Set<String> set2, Question question) { // set1 = correctAnswers, set2 = userAnswers
         Set<String> intersection = new HashSet<>(set1);
         intersection.retainAll(set2);
         int intersectionSize = intersection.size();
@@ -23,7 +19,7 @@ public class PointsCounter {
                 set2.size() - intersectionSize; // chyby su moznosti mimo intersection
 
         if (numberOfMistakes == 1) {
-            points += theme.getPartialPointsPerQuestion();
+            points += question.getTheme().getPartialPointsPerQuestion();
         }
     }
 

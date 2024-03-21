@@ -36,7 +36,6 @@ public class QuizPrep {
             System.out.println("\nYou have answered all of the questions in this test.\nYou scored " + pointsCounter.getPoints() + " points!");
             // TODO vypisat znamku, aky bol celkovy pocet bodov atd
         }
-
     }
 
     private void evaluate(Question question, List<String> answers) { // na vstupe dostavam pole odpovedi (cele ich znenie), ktore zadal user
@@ -48,30 +47,32 @@ public class QuizPrep {
             set1 = Set.of(correctAnswers.getFirst().toLowerCase());
         }
 
-
-        //TODO hlasenia o spravnosti odpovede sa maju vypisovat iba ked mod = 1
-
         if (set1.equals(set2)) { // ak su mnozina odpovedi usera a mnozina spravnych odpovedi rovnake
-            System.out.println("Correct!");
+            println("Correct!");
             pointsCounter.addPoints(question);
             return;
         }
 
         if (question.isTextInput()) { // ak nespravna textova odpoved, vypisem spravnu
-            System.out.printf("Wrong. Correct answer: %s%n", correctAnswers.getFirst());
+            println("Wrong. Correct answer: %s", correctAnswers.getFirst());
         } else { // ak nespravny choice, vypisem spravne moznosti
-            StringBuilder msg = new StringBuilder("Wrong. Correct answer(s):\n");
+            println("Wrong. Correct answer(s):");
             for (Map.Entry<String, String> element : question.getAllAnswersMap().entrySet()) {
                 if (correctAnswers.contains(element.getValue())) {
-                    msg.append(String.format("%s) %s%n", element.getKey(), element.getValue()));
+                    println("%s) %s", element.getKey(), element.getValue());
                 }
             }
-            msg.setLength(msg.length() - 1);
-            System.out.println(msg);
-
-            pointsCounter.addPartialPoints(set1, set2); // TODO tu musim predavat theme ako argument teraz :(
+            pointsCounter.addPartialPoints(set1, set2, question);
         }
     }
+
+    private void println(CharSequence format, Object... args) { // TODO premenovat rozumne
+        if (mode.equals("1")) {
+            System.out.printf(format + "%n", args);
+        }
+    }
+
+    //TODO printTime metoda - rozne podla modu - elapsed / zvysny cas
 
     private List<String> prompt(Question question) {
         System.out.println();

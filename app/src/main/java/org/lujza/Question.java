@@ -3,6 +3,15 @@ package org.lujza;
 import java.util.*;
 
 public class Question {
+    public Theme getTheme() {
+        return theme;
+    }
+
+    public void setTheme(Theme theme) {
+        this.theme = theme;
+    }
+
+    private transient Theme theme; // ignorovane gsonom
     private String text;
     private String type;
     private List<String> wrongAnswers = new ArrayList<>();

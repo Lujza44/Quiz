@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Add question types to json files">
+    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Add scoring system">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Stopwatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/JsonReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/PointsCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/PointsCounter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Question.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/QuizPrep.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/QuizPrep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Theme.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Theme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/bioinf.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/bioinf.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/bioinf_alg.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/bioinf_alg.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/latin.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/latin.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/morse.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/morse.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mountains.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/mountains.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/networking.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/networking.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/plants.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/plants.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,19 +66,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.Quiz:app [:app:App.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Quiz:app [:app:Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/lujza/SKOLA/java/Quiz&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.Quiz:app [:app:App.main()].executor": "Run",
+    "Gradle.Quiz:app [:app:Main.main()].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/lujza/SKOLA/java/Quiz",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.lujza" />
@@ -270,7 +264,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710274130732</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Update json files">
+      <option name="closed" value="true" />
+      <created>1710684533110</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1710684533110</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Add scoring system">
+      <option name="closed" value="true" />
+      <created>1710684549277</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1710684549277</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -298,6 +308,8 @@
     <MESSAGE value="Remove some warnings" />
     <MESSAGE value="Update jsons" />
     <MESSAGE value="Add question types to json files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add question types to json files" />
+    <MESSAGE value="Update json files" />
+    <MESSAGE value="Add scoring system" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add scoring system" />
   </component>
 </project>
