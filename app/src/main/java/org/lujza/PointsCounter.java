@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class PointsCounter {
 
-    private int points = 0;
+    private static int points = 0;
 
     public void addPoints(Question question) {
         points += question.getTheme().getMaxPointsPerQuestion();
@@ -23,7 +23,30 @@ public class PointsCounter {
         }
     }
 
-    public int getPoints() {
+    public static int getPoints() {
         return points;
+    }
+
+    public static void printGrade(Theme theme) {
+        int gainedPoints = getPoints();
+        int maxPoints = theme.getQuestions().size() * theme.getMaxPointsPerQuestion();
+
+        double percentage = ((double) points / maxPoints) * 100;
+        percentage = Math.round(percentage * 100.0) / 100.0;
+
+        System.out.print("\nYou have answered all of the questions in this test.\nYou scored " +
+                gainedPoints + " points, which is " + percentage + "% from the maximum of " + maxPoints +
+                " \nTherefore your grade is ");
+
+        if (points >= 0.9 * maxPoints) {
+            System.out.println("1. Excellent!");
+        } else if (points >= 0.75 * maxPoints && points < 0.9 * maxPoints) {
+            System.out.println("2. Good job!");
+        } else if (points >= 0.5 * maxPoints && points < 0.75 * maxPoints) {
+            System.out.println("3. Good!");
+        } else { // points < 0.5 * maxPoints
+            System.out.println("4. You should try again.");
+        }
+
     }
 }

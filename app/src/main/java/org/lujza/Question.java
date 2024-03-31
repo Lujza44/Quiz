@@ -52,7 +52,6 @@ public class Question {
     }
 
     public boolean isMultipleAnswer() {
-        //return !wrongChoices.isEmpty() && correctAnswers.size() > 1;
         return this.type.equals("multi");
     }
 

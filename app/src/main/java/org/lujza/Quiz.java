@@ -3,41 +3,49 @@ package org.lujza;
 import java.io.IOException;
 import java.util.*;
 
-public class QuizPrep {
+public class Quiz {
     private final Scanner scanner = new Scanner(System.in);
-    private String mode;
     private final JsonReader jsonReader = new JsonReader("data");
-
     private final PointsCounter pointsCounter = new PointsCounter();
+    private int mode;
+    private Theme theme;
 
-    public void startQuiz() throws IOException {
+    public void runQuiz() throws IOException {
 
         mode = prompt();
-
-        //TODO vypisat temy indexovane od 1, nie od 0
-        List<Theme> themes = jsonReader.load();
-
-        String topic = prompt(themes);
-
-        Theme theme = themes.get(Integer.parseInt(topic));
+        List<Theme> themes = jsonReader.load(); //TODO vypisat temy indexovane od 1, nie od 0
+        int topic = prompt(themes);
+        theme = themes.get(topic);
 
         System.out.println();
         System.out.println(theme.getDescription());
+        if (mode == 2) {
+            System.out.println(theme.getScoringText());
+        }
 
         List<Question> questions = theme.getQuestions();
         Collections.shuffle(questions);
+
+        Stopwatch stopwatch = new Stopwatch(questions.size() * 30 + 60, mode, theme); // 30 sekund na kazdu otazku + minuta na spracovanie zadania
+        stopwatch.start();
+
         for (Question question : questions) {
+            System.out.println();
+            stopwatch.getTime(mode);
             List<String> answers = prompt(question); // vypisem uzivatelovi otazku a vratim jeho odpoved(e)
             evaluate(question, answers); // skontrolovat ci je odpoved uzivatela spravna
         }
-        if (mode.equals("1")) {
-            System.out.println("\nYou have answered all of the questions from this topic.");
-        } else {
-            System.out.println("\nYou have answered all of the questions in this test.\nYou scored " + pointsCounter.getPoints() + " points!");
-            // TODO vypisat znamku, aky bol celkovy pocet bodov atd
-        }
+        exit();
     }
 
+    public void exit() {
+        if (mode == 1) {
+            System.out.println("\nYou have answered all of the questions from this topic.");
+        } else {
+            PointsCounter.printGrade(theme);
+        }
+        System.exit(0); // aby stopwatch nepocital dalej cas
+    }
     private void evaluate(Question question, List<String> answers) { // na vstupe dostavam pole odpovedi (cele ich znenie), ktore zadal user
         List<String> correctAnswers = question.getCorrectAnswers();
         Set<String> set1 = new HashSet<>(correctAnswers);
@@ -48,31 +56,29 @@ public class QuizPrep {
         }
 
         if (set1.equals(set2)) { // ak su mnozina odpovedi usera a mnozina spravnych odpovedi rovnake
-            println("Correct!");
+            printIfMode1("Correct!");
             pointsCounter.addPoints(question);
             return;
         }
 
         if (question.isTextInput()) { // ak nespravna textova odpoved, vypisem spravnu
-            println("Wrong. Correct answer: %s", correctAnswers.getFirst());
+            printIfMode1("Wrong. Correct answer: %s", correctAnswers.getFirst());
         } else { // ak nespravny choice, vypisem spravne moznosti
-            println("Wrong. Correct answer(s):");
+            printIfMode1("Wrong. Correct answer(s):");
             for (Map.Entry<String, String> element : question.getAllAnswersMap().entrySet()) {
                 if (correctAnswers.contains(element.getValue())) {
-                    println("%s) %s", element.getKey(), element.getValue());
+                    printIfMode1("%s) %s", element.getKey(), element.getValue());
                 }
             }
             pointsCounter.addPartialPoints(set1, set2, question);
         }
     }
 
-    private void println(CharSequence format, Object... args) { // TODO premenovat rozumne
-        if (mode.equals("1")) {
+    private void printIfMode1(CharSequence format, Object... args) {
+        if (mode == 1) {
             System.out.printf(format + "%n", args);
         }
     }
-
-    //TODO printTime metoda - rozne podla modu - elapsed / zvysny cas
 
     private List<String> prompt(Question question) {
         System.out.println();
@@ -109,7 +115,7 @@ public class QuizPrep {
         }
     }
 
-    private String prompt(List<Theme> themes) {
+    private int prompt(List<Theme> themes) {
         System.out.println();
         for (int i = 0; i < themes.size(); i++) {
             System.out.printf("%s. %s%n", i, themes.get(i).getName());
@@ -117,7 +123,7 @@ public class QuizPrep {
         return getUserChoice(themes.size() - 1);
     }
 
-    private String prompt() {
+    private int prompt() {
         System.out.println("""
                 Welcome to the application, that will help you prepare for your exams!
                 Application has two modes: practice mode and a test simulation.
@@ -125,7 +131,7 @@ public class QuizPrep {
         return getUserChoice(2);
     }
 
-    private String getUserChoice(int maxOption) {
+    private int getUserChoice(int maxOption) {
         System.out.print("Your choice: ");
         int choice;
 
@@ -138,7 +144,7 @@ public class QuizPrep {
 
                 choice = Integer.parseInt(next);
                 if (choice >= 0 && choice <= maxOption) {
-                    return next;
+                    return choice;
                 } else {
                     System.out.print("Invalid input. Please enter a valid number: ");
                 }
