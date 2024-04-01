@@ -24,3 +24,13 @@ application {
     // Define the main class for the application.
     mainClass = 'org.example.App'
 }
+
+javadoc {
+    source = sourceSets.main.allJava
+    destinationDir = file("$projectDir/app/build/docs/javadoc")
+    options.memberLevel = JavadocMemberLevel.PRIVATE
+//    options.author = true
+//    options.version = true
+//    options.links("http://docs.oracle.com/javase/8/docs/api/")
+    title = "Quiz javadoc"
+}

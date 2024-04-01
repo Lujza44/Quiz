@@ -9,11 +9,11 @@ import java.util.*;
  */
 public class Question {
     private transient Theme theme; // ignored by gson
+    private transient boolean answered;
     private String text;
     private String type;
     private List<String> wrongAnswers = new ArrayList<>();
     private List<String> correctAnswers;
-
     private List<String> allAnswers;
 
     /**
@@ -32,6 +32,14 @@ public class Question {
      */
     public void setTheme(Theme theme) {
         this.theme = theme;
+    }
+
+    public boolean isAnswered() {
+        return answered;
+    }
+
+    public void setAnswered(boolean answered) {
+        this.answered = answered;
     }
 
     /**

@@ -67,8 +67,8 @@ public class PointsCounter {
         double percentage = ((double) points / maxPoints) * 100;
         percentage = Math.round(percentage * 100.0) / 100.0;
 
-        System.out.print("\nYou scored " +
-                gainedPoints + " points, which is " + percentage + "% from the maximum of " + maxPoints +
+        System.out.print("You scored " +
+                gainedPoints + " points, which is " + percentage + "% from the maximum of " + maxPoints + "points." +
                 " \nTherefore your grade is ");
 
         if (points >= 0.9 * maxPoints) {

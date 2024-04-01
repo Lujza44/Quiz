@@ -76,7 +76,7 @@ public class Theme implements Comparable<Theme> {
      * @return A negative integer, zero, or a positive integer as this theme is less than, equal to, or greater than the specified theme.
      */
     @Override
-    public int compareTo(Theme that) { // na zoradenie tem
+    public int compareTo(Theme that) {
         if (this.name == null && that.name == null) {
             return 0;
         } else if (this.name == null) {

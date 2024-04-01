@@ -20,6 +20,7 @@ public class Quiz {
     private final PointsCounter pointsCounter = new PointsCounter();
     private int mode;
     private Theme theme;
+    private Stopwatch stopwatch;
 
     /**
      * Runs the main quiz flow, including mode selection, theme selection, and the question-answer session.
@@ -37,20 +38,26 @@ public class Quiz {
 
         System.out.println();
         System.out.println(theme.getDescription());
-        if (mode == 2) {
-            System.out.println(theme.getScoringText());
-        }
 
         List<Question> questions = theme.getQuestions();
         Collections.shuffle(questions);
 
-        Stopwatch stopwatch = new Stopwatch(questions.size() * 30 + 60, mode, theme, pointsCounter); // 30 sec for each question + 1 min for reading the instructions
+        if (mode == 2) {
+            System.out.println(theme.getScoringText());
+            stopwatch = new Stopwatch(questions.size() * 30 + 60); // 30 sec for each question + 1 min for reading the instructions
+        } else {
+            stopwatch = new Stopwatch();
+        }
+
         stopwatch.start();
 
         for (Question question : questions) {
             System.out.println();
-            stopwatch.getTime(mode);
             List<String> answers = prompt(question);
+            if (answers == null) {
+                break;
+            }
+            question.setAnswered(true);
             evaluate(question, answers);
         }
         exit();
@@ -95,7 +102,6 @@ public class Quiz {
      * @return a list of strings representing the user's answer(s).
      */
     private List<String> prompt(Question question) {
-        System.out.println();
         System.out.println(question.getText());
         Map<String, String> shuffledAnswers = new HashMap<>();
 
@@ -105,8 +111,14 @@ public class Quiz {
                 System.out.printf("%s) %s%n", element.getKey(), element.getValue());
             }
         }
+        stopwatch.printTime();
+        System.out.print(" Your answer: ");
         String input = getUserAnswer().toLowerCase(); // the user can write any string
-        return getAnswerList(input, shuffledAnswers, question);
+        if (stopwatch.isTimeUp()) {
+            return null;
+        } else {
+            return getAnswerList(input, shuffledAnswers, question);
+        }
     }
 
     /**
@@ -231,10 +243,12 @@ public class Quiz {
      * Concludes the quiz session, displaying final messages and scores. This method also handles any cleanup or final state changes required.
      */
     public void exit() {
+        System.out.println();
         if (mode == 1) {
-            System.out.println("\nYou have answered all of the questions from this topic.");
+            System.out.println("You have answered all of the questions from this topic.");
         } else {
-            System.out.println("\nYou have answered all of the questions in this test.");
+            long count = theme.getQuestions().stream().filter(Question::isAnswered).count();
+            System.out.printf("You have answered %s/%s questions in this test.%n", count, theme.getQuestions().size());
             pointsCounter.printGrade(theme);
         }
         System.exit(0); // to also stop the stopwatch

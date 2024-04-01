@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Index themes from 1">
+    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Add javadoc comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/JsonReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/PointsCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/PointsCounter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Question.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Quiz.java" afterDir="false" />
@@ -27,12 +27,32 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Quiz" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Quiz" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Quiz" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="distribution" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Quiz" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -71,6 +91,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.Quiz [distZip].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Quiz [javadoc].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Quiz:app [:app:App.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Quiz:app [:app:Main.main()].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -86,7 +108,7 @@
       <recent name="org.lujza" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.lujza.Main" />
       <module name="Quiz.app.main" />
@@ -100,8 +122,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Quiz [distZip]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="distZip" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Quiz [javadoc]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="javadoc" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Quiz [javadoc]" />
+        <item itemvalue="Gradle.Quiz [distZip]" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -322,7 +390,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711953791932</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Add javadoc comments">
+      <option name="closed" value="true" />
+      <created>1711956870187</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1711956870187</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -356,6 +432,7 @@
     <MESSAGE value="Remove some warnings" />
     <MESSAGE value="Clean up the code" />
     <MESSAGE value="Index themes from 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Index themes from 1" />
+    <MESSAGE value="Add javadoc comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add javadoc comments" />
   </component>
 </project>
