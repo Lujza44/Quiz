@@ -7,6 +7,10 @@ public class PointsCounter {
 
     private int points = 0;
 
+    public int getPoints() {
+        return points;
+    }
+
     public void addPoints(Question question) {
         points += question.getTheme().getMaxPointsPerQuestion();
     }
@@ -21,10 +25,6 @@ public class PointsCounter {
         if (numberOfMistakes == 1) {
             points += question.getTheme().getPartialPointsPerQuestion();
         }
-    }
-
-    public int getPoints() {
-        return points;
     }
 
     public void printGrade(Theme theme) {
@@ -47,6 +47,5 @@ public class PointsCounter {
         } else { // points < 0.5 * maxPoints
             System.out.println("4. You should try again.");
         }
-
     }
 }

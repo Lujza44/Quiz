@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Add stopwatch">
+    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Remove some warnings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/PointsCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/PointsCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Question.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Quiz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Stopwatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Stopwatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Theme.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Theme.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +51,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -296,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711896037362</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Remove some warnings">
+      <option name="closed" value="true" />
+      <created>1711951490149</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1711951490149</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -321,13 +327,13 @@
     <MESSAGE value="Modify methods that get input from user" />
     <MESSAGE value="Add json files" />
     <MESSAGE value="Modify evaluation" />
-    <MESSAGE value="Remove some warnings" />
     <MESSAGE value="Update jsons" />
     <MESSAGE value="Add question types to json files" />
     <MESSAGE value="Update json files" />
     <MESSAGE value="Add scoring system" />
     <MESSAGE value="Add printing results only in mode 1" />
     <MESSAGE value="Add stopwatch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add stopwatch" />
+    <MESSAGE value="Remove some warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove some warnings" />
   </component>
 </project>
