@@ -13,7 +13,7 @@ public class Quiz {
     public void runQuiz() throws IOException {
 
         mode = prompt();
-        List<Theme> themes = jsonReader.load(); //TODO vypisat temy indexovane od 1, nie od 0
+        List<Theme> themes = jsonReader.load();
         int topic = prompt(themes);
         theme = themes.get(topic);
 
@@ -49,9 +49,9 @@ public class Quiz {
     private int prompt(List<Theme> themes) {
         System.out.println();
         for (int i = 0; i < themes.size(); i++) {
-            System.out.printf("%s. %s%n", i, themes.get(i).getName());
+            System.out.printf("%s. %s%n", i + 1, themes.get(i).getName());
         }
-        return getUserChoice(themes.size() - 1);
+        return getUserChoice(themes.size()) - 1;
     }
 
     private List<String> prompt(Question question) {
@@ -81,7 +81,7 @@ public class Quiz {
                 }
 
                 choice = Integer.parseInt(next);
-                if (choice >= 0 && choice <= maxOption) {
+                if (choice > 0 && choice <= maxOption) {
                     return choice;
                 } else {
                     System.out.print("Invalid input. Please enter a valid number: ");

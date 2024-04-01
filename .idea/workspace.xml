@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Remove some warnings">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/PointsCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/PointsCounter.java" afterDir="false" />
+    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Clean up the code">
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Quiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Stopwatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Stopwatch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -302,7 +299,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711951490149</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Clean up the code">
+      <option name="closed" value="true" />
+      <created>1711953379680</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1711953379680</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -334,6 +339,7 @@
     <MESSAGE value="Add printing results only in mode 1" />
     <MESSAGE value="Add stopwatch" />
     <MESSAGE value="Remove some warnings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove some warnings" />
+    <MESSAGE value="Clean up the code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clean up the code" />
   </component>
 </project>
