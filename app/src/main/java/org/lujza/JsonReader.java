@@ -10,21 +10,44 @@ import java.util.Objects;
 
 import com.google.gson.Gson;
 
+/**
+ * The {@code JsonReader} class is responsible for loading and parsing JSON files containing theme data for quizzes.
+ * It reads files from a specified directory, parsing each file into a {@link Theme} object, and then returns a list of these themes.
+ * <p>
+ * This class uses the Gson library for parsing, making it a straightforward solution for converting JSON data into Java objects.
+ * </p>
+ */
 public class JsonReader {
 
     private final File directory;
+
+    /**
+     * Constructs a {@code JsonReader} with a specified directory path.
+     * This directory is expected to contain JSON files that can be parsed into {@link Theme} objects.
+     *
+     * @param filePath the path to the directory containing JSON files.
+     */
     public JsonReader(String filePath) {
         this.directory = new File(filePath);
-        //System.out.println("JsonReader initialized with directory: " + directory.getAbsolutePath());
     }
 
+    /**
+     * Loads and parses all JSON files found in the specified directory, converting them into a list of {@link Theme} objects.
+     * Each theme's questions are also processed, ensuring that they are properly associated with their parent theme.
+     * <p>
+     * This method relies on the Gson library for JSON parsing. The resulting list of themes is sorted before being returned.
+     * </p>
+     *
+     * @return a sorted list of {@link Theme} objects loaded from the JSON files.
+     * @throws IOException if an I/O error occurs reading from the file or a malformed or unmappable byte sequence is read.
+     */
     public List<Theme> load() throws IOException {
         List<Theme> list = new ArrayList<>();
         for (File file : Objects.requireNonNull(directory.listFiles())) {
             Gson gson = new Gson();
             FileReader reader = new FileReader(file);
-            Theme theme = gson.fromJson(reader, Theme.class); // vsetko do objektu theme
-            theme.getQuestions().forEach(question -> question.setTheme(theme)); // z objektu theme otazky -> do kazdej theme
+            Theme theme = gson.fromJson(reader, Theme.class);
+            theme.getQuestions().forEach(question -> question.setTheme(theme));
             list.add(theme);
         }
         Collections.sort(list);

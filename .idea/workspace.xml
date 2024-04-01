@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Clean up the code">
+    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Index themes from 1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/JsonReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/PointsCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/PointsCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Question.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Quiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Stopwatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Stopwatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Theme.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Theme.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711953379680</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Index themes from 1">
+      <option name="closed" value="true" />
+      <created>1711953791932</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1711953791932</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -340,6 +355,7 @@
     <MESSAGE value="Add stopwatch" />
     <MESSAGE value="Remove some warnings" />
     <MESSAGE value="Clean up the code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean up the code" />
+    <MESSAGE value="Index themes from 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Index themes from 1" />
   </component>
 </project>
