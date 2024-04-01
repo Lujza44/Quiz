@@ -3,14 +3,6 @@ package org.lujza;
 import java.util.*;
 
 public class Question {
-    public Theme getTheme() {
-        return theme;
-    }
-
-    public void setTheme(Theme theme) {
-        this.theme = theme;
-    }
-
     private transient Theme theme; // ignorovane gsonom
     private String text;
     private String type;
@@ -18,6 +10,14 @@ public class Question {
     private List<String> correctAnswers;
 
     private List<String> allAnswers;
+
+    public Theme getTheme() {
+        return theme;
+    }
+
+    public void setTheme(Theme theme) {
+        this.theme = theme;
+    }
     public String getText() {
         return text;
     }
@@ -26,8 +26,8 @@ public class Question {
         return correctAnswers;
     }
 
-    private Map<String,String> answersToMap() {
-        Map<String,String> map = new HashMap<>();
+    private Map<String, String> answersToMap() {
+        Map<String, String> map = new HashMap<>();
         for (int i = 0; i < allAnswers.size(); i++) {
             map.put(String.valueOf((char) ('a' + i)), allAnswers.get(i));
         }
@@ -53,13 +53,5 @@ public class Question {
 
     public boolean isMultipleAnswer() {
         return this.type.equals("multi");
-    }
-
-    // toto mozno pre osobnu kontrolu, aby sa nemusel kontrolovat manualne JSON,
-    public boolean isValid() {
-        // kontrola ze ci napr. sedia odpovede v correctAnswers s tym co mas definovane v choices...
-        // ci nahodou nie je viac correctAnswers ako choices, atd...
-        // to mi len tak napadlo
-        return true;
     }
 }

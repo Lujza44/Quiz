@@ -5,12 +5,14 @@ public class Stopwatch implements Runnable {
     private final Object lock = new Object();
     private final int mode; // 1 for practicing mode, 2 for test simulation mode
     private final Theme theme;
+    private final PointsCounter pc;
 
     // Constructor to initialize the stopwatch with a given number of seconds and mode
-    public Stopwatch(int timeInSeconds, int mode, Theme theme) {
+    public Stopwatch(int timeInSeconds, int mode, Theme theme, PointsCounter pc) {
         this.timeInSeconds = timeInSeconds;
         this.mode = mode;
         this.theme = theme;
+        this.pc = pc;
     }
 
     // Method to start the countdown or count up based on the mode
@@ -36,7 +38,7 @@ public class Stopwatch implements Runnable {
             }
             System.out.println();
             System.out.println("Time's up!");
-            PointsCounter.printGrade(theme);
+            pc.printGrade(theme); // toto je take zapeklite :D
             System.exit(0);
         } else if (mode == 1) { // Practicing mode
             timeInSeconds = 0; // Start counting from 0
@@ -55,7 +57,6 @@ public class Stopwatch implements Runnable {
         }
     }
 
-    // Method to get the time in "X min Y s" format, works for both remaining and elapsed time
     public void getTime(int mode) {
         int minutes = Math.abs(timeInSeconds) / 60;
         int seconds = Math.abs(timeInSeconds) % 60;

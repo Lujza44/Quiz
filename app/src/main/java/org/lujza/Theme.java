@@ -1,6 +1,5 @@
 package org.lujza;
 
-import java.util.Comparator;
 import java.util.List;
 
 public class Theme implements Comparable<Theme> {
@@ -9,7 +8,6 @@ public class Theme implements Comparable<Theme> {
     private String scoringText;
     private int maxPointsPerQuestion;
     private int partialPointsPerQuestion;
-
     private List<Question> questions;
 
     public String getName() {
@@ -37,7 +35,7 @@ public class Theme implements Comparable<Theme> {
     }
 
     @Override
-    public int compareTo(Theme that) {
+    public int compareTo(Theme that) { // na zoradenie tem
         if (this.name == null && that.name == null) {
             return 0;
         } else if (this.name == null) {

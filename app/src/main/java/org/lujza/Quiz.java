@@ -26,7 +26,7 @@ public class Quiz {
         List<Question> questions = theme.getQuestions();
         Collections.shuffle(questions);
 
-        Stopwatch stopwatch = new Stopwatch(questions.size() * 30 + 60, mode, theme); // 30 sekund na kazdu otazku + minuta na spracovanie zadania
+        Stopwatch stopwatch = new Stopwatch(questions.size() * 30 + 60, mode, theme, pointsCounter); // 30 sekund na kazdu otazku + minuta na spracovanie zadania
         stopwatch.start();
 
         for (Question question : questions) {
@@ -42,7 +42,8 @@ public class Quiz {
         if (mode == 1) {
             System.out.println("\nYou have answered all of the questions from this topic.");
         } else {
-            PointsCounter.printGrade(theme);
+            System.out.println("\nYou have answered all of the questions in this test.");
+            pointsCounter.printGrade(theme);
         }
         System.exit(0); // aby stopwatch nepocital dalej cas
     }
