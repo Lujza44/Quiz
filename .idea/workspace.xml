@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Add README and update stopwatch functions">
+    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Update javadoc">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/quiz/Quiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/quiz/util/JsonReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/quiz/util/PointsCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/quiz/util/Stopwatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/JsonReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/PointsCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/PointsCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Quiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Stopwatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Stopwatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Theme.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/Theme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/JsonReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/PointsCounter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/quiz/model/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Quiz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Stopwatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/Theme.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/lujza/quiz/model/Theme.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +97,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build Quiz.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Quiz [distZip].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Quiz [javadoc].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Quiz:app [:app:App.main()].executor&quot;: &quot;Run&quot;,
@@ -99,12 +108,18 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/lujza/SKOLA/java/Quiz&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.lujza" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.lujza.quiz.model" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -167,9 +182,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.Quiz [javadoc]" />
         <item itemvalue="Gradle.Quiz [distZip]" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -405,7 +420,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711999028085</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Update javadoc">
+      <option name="closed" value="true" />
+      <created>1712046227976</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1712046227976</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -441,6 +464,7 @@
     <MESSAGE value="Index themes from 1" />
     <MESSAGE value="Add javadoc comments" />
     <MESSAGE value="Add README and update stopwatch functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add README and update stopwatch functions" />
+    <MESSAGE value="Update javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update javadoc" />
   </component>
 </project>

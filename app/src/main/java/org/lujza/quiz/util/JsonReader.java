@@ -1,4 +1,4 @@
-package org.lujza;
+package org.lujza.quiz.model;
 
 import java.io.File;
 import java.io.FileReader;

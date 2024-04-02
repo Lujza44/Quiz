@@ -1,4 +1,4 @@
-package org.lujza;
+package org.lujza.quiz.model;
 
 import java.io.IOException;
 import java.util.*;
@@ -50,6 +50,18 @@ public class Quiz {
      * It tracks the remaining time for the quiz and can also track the elapsed time in practice mode.
      */
     private Stopwatch stopwatch;
+
+    /**
+     * The main method that starts the execution of the quiz application.
+     * It creates an instance of the {@link Quiz} class and invokes its {@code runQuiz} method to begin the quiz process.
+     *
+     * @param args command-line arguments passed to the application (not used).
+     * @throws IOException if an I/O error occurs during the execution of the quiz, such as loading questions from files.
+     */
+    public static void main(String[] args) throws IOException {
+        Quiz quiz = new Quiz();
+        quiz.runQuiz();
+    }
 
     /**
      * Runs the main quiz flow, including mode selection, theme selection, and the question-answer session.
