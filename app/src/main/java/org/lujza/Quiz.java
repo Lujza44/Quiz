@@ -15,11 +15,40 @@ import java.util.*;
  * @author Lujza Milotova
  */
 public class Quiz {
+    /**
+     * A scanner to read user input from the console. It's used throughout the application to capture user responses
+     * to various prompts, including mode selection, theme selection, and answers to questions.
+     */
     private final Scanner scanner = new Scanner(System.in);
+
+    /**
+     * An instance of {@link JsonReader} used to load quiz themes and questions from JSON files located in the specified directory.
+     * This allows the quiz application to dynamically load its content from a structured JSON format.
+     */
     private final JsonReader jsonReader = new JsonReader("data");
+
+    /**
+     * A {@link PointsCounter} instance for tracking and calculating the user's score based on their answers to quiz questions.
+     * It supports adding points for correct answers, partial points for nearly correct answers, and calculating the final grade.
+     */
     private final PointsCounter pointsCounter = new PointsCounter();
+
+    /**
+     * The current mode of the quiz. It determines how the quiz behaves and interacts with the user.
+     * Mode 1 corresponds to the practice mode, while mode 2 corresponds to the test simulation mode.
+     */
     private int mode;
+
+    /**
+     * The current theme selected for the quiz. The theme encompasses a collection of questions related to a specific topic
+     * and is chosen by the user at the beginning of the quiz session.
+     */
     private Theme theme;
+
+    /**
+     * A {@link Stopwatch} instance used to manage the timing aspect of the quiz in test simulation mode.
+     * It tracks the remaining time for the quiz and can also track the elapsed time in practice mode.
+     */
     private Stopwatch stopwatch;
 
     /**
@@ -167,9 +196,9 @@ public class Quiz {
     /**
      * Converts the user's input into a list of answers, validating against the available options for questions with predefined answers.
      *
-     * @param input            the raw input from the user.
-     * @param shuffledAnswers  a map of the available answers with their identifiers.
-     * @param question         the question being answered, for context.
+     * @param input           the raw input from the user.
+     * @param shuffledAnswers a map of the available answers with their identifiers.
+     * @param question        the question being answered, for context.
      * @return a list of answers selected by the user.
      */
     private List<String> getAnswerList(String input, Map<String, String> shuffledAnswers, Question question) {

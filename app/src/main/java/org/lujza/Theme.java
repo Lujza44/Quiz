@@ -8,11 +8,41 @@ import java.util.List;
  * This class implements the {@link Comparable} interface to allow themes to be sorted by their names.
  */
 public class Theme implements Comparable<Theme> {
+
+    /**
+     * The name of the theme. This field represents the title or main idea of the theme,
+     * which is used to categorize and identify the group of questions under this theme.
+     */
     private String name;
+
+    /**
+     * A brief description of the theme. This text provides additional context or information
+     * about the theme, helping users understand what kind of questions or topics the theme covers.
+     */
     private String description;
+
+    /**
+     * Text detailing how scoring works for this particular theme. This may include information
+     * about the distribution of points, the importance of specific questions, or how partial points are awarded.
+     */
     private String scoringText;
+
+    /**
+     * The maximum number of points that can be awarded for a single question within this theme.
+     * This value is used to calculate the total and final score of a user, emphasizing the theme's weighting on the overall quiz.
+     */
     private int maxPointsPerQuestion;
+
+    /**
+     * The number of points awarded for partially correct answers to questions within this theme.
+     * This allows for a more nuanced scoring system, where users can still receive some points for near-correct answers.
+     */
     private int partialPointsPerQuestion;
+
+    /**
+     * A list of questions associated with this theme. Each question is an instance of the {@link Question} class,
+     * containing its own set of properties, such as the question text, correct and incorrect answers, and its type.
+     */
     private List<Question> questions;
 
     /**

@@ -19,6 +19,12 @@ import com.google.gson.Gson;
  */
 public class JsonReader {
 
+    /**
+     * The directory from which JSON files containing quiz data are read. This field represents
+     * the path to the folder containing all the necessary JSON files that are loaded into the application
+     * to construct quiz themes and questions. It is initialized with the path provided at the creation
+     * of the {@code JsonReader} instance.
+     */
     private final File directory;
 
     /**

@@ -8,12 +8,45 @@ import java.util.*;
  * It provides functionality to access question details and to format answers for display.
  */
 public class Question {
+
+    /**
+     * The theme associated with this question, indicating the category or topic to which the question belongs.
+     * This field is marked as transient to be ignored by Gson during serialization and deserialization processes.
+     */
     private transient Theme theme; // ignored by gson
+
+    /**
+     * A flag indicating whether this question has been answered by the user. It helps in determining how many
+     * questions has the user answered at the end of a test.
+     */
     private transient boolean answered;
+
+    /**
+     * The text of the question, presented to the user. It includes the actual question content that the user needs to answer.
+     */
     private String text;
+
+    /**
+     * The type of the question, which determines how it should be presented and answered. Common types include "text" for text input,
+     * "single" for single-choice, and "multi" for multiple-choice questions.
+     */
     private String type;
+
+    /**
+     * A list of incorrect answers for the question. In the case of questions with options, this list provides the wrong options
+     * presented alongside the correct ones.
+     */
     private List<String> wrongAnswers = new ArrayList<>();
+
+    /**
+     * A list of the correct answers for the question. Depending on the question type, this might contain one or more correct answers.
+     */
     private List<String> correctAnswers;
+
+    /**
+     * A combined list of all answers (both correct and wrong) for this question. This list is typically used for displaying answer options
+     * to the user in a randomized order.
+     */
     private List<String> allAnswers;
 
     /**
@@ -34,10 +67,23 @@ public class Question {
         this.theme = theme;
     }
 
+    /**
+     * Checks if the question has already been answered by the user.
+     *
+     * @return {@code true} if the question has been answered; {@code false} otherwise.
+     */
     public boolean isAnswered() {
         return answered;
     }
 
+    /**
+     * Sets the answered state of the question. This method is used to mark a question as answered or unanswered,
+     * typically after the user has attempted to answer it. Updating the answered state helps in tracking the user's
+     * progress.
+     *
+     * @param answered the new answered state of the question; {@code true} if the question has been answered,
+     *                 otherwise {@code false}.
+     */
     public void setAnswered(boolean answered) {
         this.answered = answered;
     }

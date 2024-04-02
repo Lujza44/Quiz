@@ -10,6 +10,11 @@ import java.util.Set;
  */
 public class PointsCounter {
 
+    /**
+     * The current total of points accumulated by the user. This field tracks the user's score throughout the quiz,
+     * increasing as the user provides correct answers to questions. Points may be awarded based on the correctness
+     * of the answers, with possible adjustments for partial correctness or penalties.
+     */
     private int points = 0;
 
     /**
