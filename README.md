@@ -43,10 +43,10 @@ The project is organized into several Java classes, each with a specific role:
 gradle build
 ```
 
-## Input data
+## Input Data
 The input data for the quiz application primarily consists of JSON files containing the quiz questions, themes, and their respective details. Each theme's file includes a collection of questions, each question detailing its text, type (e.g., multiple-choice, text input), correct answers, and incorrect options. Themes are categorized by name and include a description and scoring guidelines, providing a structured format for easily updating or adding new content to the application.
 
-## Output data
+## Output Data
 The output data of the quiz application is presented to the user in the form of text displayed on the console. It includes prompts for user decisions (like mode and theme selection), questions with possible answers for the user to respond to, immediate feedback on answers (if applicable), and a final grade upon completion. The final grade output includes the total points scored, a percentage of correct answers, and a qualitative assessment based on the user's performance.
 
 ## Future Enhancements
