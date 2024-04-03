@@ -23,6 +23,9 @@ java {
 application {
     // Define the main class for the application.
     mainClass = 'org.lujza.quiz.Quiz'
+    applicationDistribution.from("$projectDir/data") {
+        into "data"
+    }
 }
 
 javadoc {
