@@ -1,0 +1,315 @@
+{
+  "name": "Molecular genetics of plants",
+  "description": "Each question consists of a term from the molecular genetics of plants. Your task is to select all the options that apply to the given term.",
+  "scoringText": "If you select exactly the correct answers, you get 3 points. If you make one mistake, you get 1 point. If you make two or more mistakes, you get 0 points.",
+  "maxPointsPerQuestion": 3,
+  "partialPointsPerQuestion": 1,
+  "questions": [
+    {
+      "type": "multi",
+      "text": "de novo methylation",
+      "wrongAnswers": [
+        "is not possible in plants",
+        "is induced by histone modifications"
+      ],
+      "correctAnswers": [
+        "is induced by DNA binding proteins (transcription factors) that bind to a specific sequence",
+        "is induced by sRNA that lead SUV4 to methylate certain sequence of DNA"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "CpG context of DNA methylation",
+      "wrongAnswers": [
+        "is the same as GpC context"
+      ],
+      "correctAnswers": [
+        "could be frozen coincidence (one symmetric context is enough)",
+        "leads to a lot of CpG islands in plant genomes",
+        "methyltransferases can work only with CpG, not GpC"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "CMT3 and SUVH4 positive feedback loop",
+      "wrongAnswers": [
+        "CMT3 methylates first",
+        "SUVH4 methylates first"
+      ],
+      "correctAnswers": [
+        "none of the enzymes provide a complete signal for methylation",
+        "assures methylation of both DNA and histones"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "CREs",
+      "wrongAnswers": [
+        "are regulatory elements set far from the gene"
+      ],
+      "correctAnswers": [
+        "are cis regulatory elements",
+        "are regulatory elements set close to the gene",
+        "are enhancers and silencers"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "posttranscriptional regulation of expression",
+      "correctAnswers": [
+        "is RNA splicing",
+        "is RNA adenylation and methylation",
+        "is RNA interference",
+        "is transport of the RNA from the nucleus"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "RNA interference",
+      "wrongAnswers": [
+        "does not occur in plants",
+        "is the process of posttranslational modification",
+        "is the process of silencing expression by ssRNA"
+      ],
+      "correctAnswers": [
+        "is the process of silencing expression by dsRNA"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "siRNA in RNA interference",
+      "wrongAnswers": [
+        "are single stranded",
+        "are 100-150 nt long"
+      ],
+      "correctAnswers": [
+        "are small interfering RNAs",
+        "are 20-24 nt long"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "DCL enzyme",
+      "wrongAnswers": [
+        "cleaves RNA to long fragments"
+      ],
+      "correctAnswers": [
+        "is a DICER-like enzyme",
+        "cleaves RNA to small fragments",
+        "plays crucial role in RNA interference"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "Argonaut protein",
+      "wrongAnswers": [
+        "binds double strand sRNA"
+      ],
+      "correctAnswers": [
+        "binds single strand sRNA",
+        "is part of a RISC complex",
+        "plays crucial role in RNA interference"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "dsRNA",
+      "wrongAnswers": [
+        "does not exist"
+      ],
+      "correctAnswers": [
+        "is created by duplication of viral ssRNA",
+        "is created by transcription of an inverted repeat",
+        "is created from ssRNA by RDR"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "demethylation",
+      "wrongAnswers": [
+        "demethylated promoters lead to lower expression"
+      ],
+      "correctAnswers": [
+        "is done by enzymes ROS1, DML2, DML3, DME",
+        "is done by demethylases and glycosylases",
+        "demethylated promoters lead to higher expression"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "steps of RNA interference are",
+      "wrongAnswers": [
+        "ARGONAUT binds short dsRNA"
+      ],
+      "correctAnswers": [
+        "cleavage of dsRNA by DCL",
+        "ARGONAUT binds short ssRNA",
+        "RISC recognises mRNA sequence to be cleaved"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "miRNA",
+      "wrongAnswers": [
+        "is tRNA"
+      ],
+      "correctAnswers": [
+        "is sRNA",
+        "regulates master regulators in trans",
+        "is made from RNA Pol II transcript"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "siRNA",
+      "correctAnswers": [
+        "is sRNA",
+        "is dsDNA",
+        "regulates expression both in cis and in trans",
+        "can originate both from outside and inside of the cell"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "secondary siRNA",
+      "wrongAnswers": [
+        "is 22 nt long",
+        "is cleaved by DCL2"
+      ],
+      "correctAnswers": [
+        "is 21 nt long",
+        "is cleaved by DCL4"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "transmembrane carriers",
+      "wrongAnswers": [
+        "carry sRNA between cells",
+        "are DCL proteins",
+        "are ARGONAUT proteins"
+      ],
+      "correctAnswers": [
+        "are not present in plants"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "RNAi",
+      "wrongAnswers": [
+        "cannot ensure virus resistance in new leaves"
+      ],
+      "correctAnswers": [
+        "serves for defense against TE",
+        "serves for defense against viruses",
+        "ensures that new leaves are virus resistant"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "DNA cut & paste TE",
+      "wrongAnswers": [
+        "cannot multiplicatively spread through genome"
+      ],
+      "correctAnswers": [
+        "have inverted repeats",
+        "code transponase",
+        "leave footprint (short duplicated DNA)"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "DNA copy & paste TE",
+      "wrongAnswers": [
+        "use RNA intermediate to spread",
+        "happen by double strand break in DNA"
+      ],
+      "correctAnswers": [
+        "are for example Helitrons",
+        "use dsRNA intermediate to spread"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "LTR retrotransposones",
+      "wrongAnswers": [
+        "have inverted repeats",
+        "leave footprint (short duplicated DNA)"
+      ],
+      "correctAnswers": [
+        "have forward repeats",
+        "code integrase, polymerase and Gag protein"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "retrotransposones without LTR",
+      "wrongAnswers": [
+        "are for example MULEs",
+        "are for example MITEs"
+      ],
+      "correctAnswers": [
+        "are for example LINEs",
+        "are for example SINEs"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "TEs succeed",
+      "wrongAnswers": [
+        "by low copy number",
+        "by lowering the fitness",
+        "by activating other TEs"
+      ],
+      "correctAnswers": [
+        "none of the other options"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "viruses spread",
+      "correctAnswers": [
+        "vertically (from parent to offspring plant)",
+        "horizontally if a cell wall is broken",
+        "by insects",
+        "inside a plant by plasmodesmas"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "virus inside a vector",
+      "wrongAnswers": [
+        "cannot spread"
+      ],
+      "correctAnswers": [
+        "can spread to vector offsprings",
+        "can adsorb on the vector",
+        "can infect the vector for a short period"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "viruses",
+      "wrongAnswers": [
+        "can increase plant growth"
+      ],
+      "correctAnswers": [
+        "can infect pests",
+        "can increase genetic variability",
+        "can increase plant's resistance"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "viroids",
+      "wrongAnswers": [
+        "code genes essential for their spreading",
+        "have a capsid"
+      ],
+      "correctAnswers": [
+        "are small circular ssDNA",
+        "do not code anything"
+      ]
+    }
+  ]
+}

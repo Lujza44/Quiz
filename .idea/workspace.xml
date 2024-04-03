@@ -4,10 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Update project structure">
+    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Update build.gradle and settings.gradle">
+      <change afterPath="$PROJECT_DIR$/unzipped/Quiz/data/bioinf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unzipped/Quiz/data/bioinf_alg.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unzipped/Quiz/data/latin.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unzipped/Quiz/data/morse.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unzipped/Quiz/data/mountains.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unzipped/Quiz/data/networking.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unzipped/Quiz/data/plants.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unzipped/Quiz/lib/Quiz.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unzipped/Quiz/lib/gson-2.8.9.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lujza/quiz/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lujza/quiz/Quiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lujza/quiz/util/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lujza/quiz/util/JsonReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +100,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Main.executor": "Run",
     "Gradle.Build Quiz.executor": "Run",
+    "Gradle.Quiz [:Quiz.main()].executor": "Run",
     "Gradle.Quiz [distZip].executor": "Run",
     "Gradle.Quiz [javadoc].executor": "Run",
     "Gradle.Quiz:app [:app:App.main()].executor": "Run",
@@ -116,10 +129,11 @@
       <recent name="org.lujza.quiz.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Quiz">
+  <component name="RunManager">
     <configuration name="Quiz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.lujza.quiz.Quiz" />
-      <module name="Quiz.app.main" />
+      <module name="Quiz.main" />
+      <option name="PROGRAM_PARAMETERS" value="-DdataDir=data" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.lujza.quiz.*" />
@@ -130,55 +144,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Quiz [distZip]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="distZip" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Quiz [javadoc]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="javadoc" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Quiz" />
-        <item itemvalue="Gradle.Quiz [distZip]" />
-        <item itemvalue="Gradle.Quiz [javadoc]" />
       </list>
     </recent_temporary>
   </component>
@@ -462,7 +430,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712150400383</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Update build.gradle and settings.gradle">
+      <option name="closed" value="true" />
+      <created>1712152432189</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1712152432189</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -478,7 +454,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Initial commit" />
     <MESSAGE value="Update QuizPrep class" />
     <MESSAGE value="Update" />
     <MESSAGE value="Add new json files" />
@@ -503,6 +478,7 @@
     <MESSAGE value="Modify README" />
     <MESSAGE value="Update README" />
     <MESSAGE value="Update project structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update project structure" />
+    <MESSAGE value="Update build.gradle and settings.gradle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update build.gradle and settings.gradle" />
   </component>
 </project>

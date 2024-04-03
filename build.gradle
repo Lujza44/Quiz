@@ -26,6 +26,9 @@ application {
     applicationDistribution.from("$projectDir/data") {
         into "data"
     }
+    applicationDefaultJvmArgs = [
+        '-DdataDir=../data'
+    ]
 }
 
 javadoc {

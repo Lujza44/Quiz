@@ -28,12 +28,6 @@ public class Quiz {
     private final Scanner scanner = new Scanner(System.in);
 
     /**
-     * An instance of {@link JsonReader} used to load quiz themes and questions from JSON files located in the specified directory.
-     * This allows the quiz application to dynamically load its content from a structured JSON format.
-     */
-    private final JsonReader jsonReader = new JsonReader("data");
-
-    /**
      * A {@link PointsCounter} instance for tracking and calculating the user's score based on their answers to quiz questions.
      * It supports adding points for correct answers, partial points for nearly correct answers, and calculating the final grade.
      */
@@ -79,6 +73,10 @@ public class Quiz {
     public void runQuiz() throws IOException {
 
         mode = prompt();
+
+        String dataDir = System.getProperty("dataDir", "data");
+
+        JsonReader jsonReader = new JsonReader(dataDir);
         List<Theme> themes = jsonReader.load();
         int topic = prompt(themes);
         theme = themes.get(topic);

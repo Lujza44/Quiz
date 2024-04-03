@@ -1,0 +1,105 @@
+{
+  "name": "The Eight-thousanders",
+  "description": "Each question is about eight-thousenders. Your task is to select all names of the peaks, which are eight-thousanders.",
+  "scoringText": "If you select exactly the correct answers, you get 3 points. If you make one mistake, you get 1 point. If you make two or more mistakes, you get 0 points.",
+  "maxPointsPerQuestion": 3,
+  "partialPointsPerQuestion": 1,
+  "questions": [
+    {
+      "type": "multi",
+      "text": "Which of these peaks are eight-thousanders?",
+      "wrongAnswers": [
+        "Kongur Tagh",
+        "Trivor"
+      ],
+      "correctAnswers": [
+        "Broad Peak",
+        "Shishapangma"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "Which of these peaks are eight-thousanders?",
+      "wrongAnswers": [
+        "Gangkhar Puensum",
+        "Passu Sar"
+      ],
+      "correctAnswers": [
+        "Mount Everest",
+        "Manaslu"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "Which of these peaks are eight-thousanders?",
+      "wrongAnswers": [
+        "Gangapurna",
+        "Namcha Barwa",
+        "Gasherbrum III"
+      ],
+      "correctAnswers": [
+        "K2 (Mount Godwin-Austen)"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "Which of these peaks are eight-thousanders?",
+      "wrongAnswers": [
+        "Gongga Shan (Minya Konka)",
+        "Tongshanjiabu",
+        "Kamet"
+      ],
+      "correctAnswers": [
+        "Kangchenjunga"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "Which of these peaks are eight-thousanders?",
+      "wrongAnswers": [
+        "Jannu / Kumbhakarna",
+        "Masherbrum (K1)"
+      ],
+      "correctAnswers": [
+        "Lhotse",
+        "Nanga Parbat"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "Which of these peaks are eight-thousanders?",
+      "wrongAnswers": [
+        "Rakaposhi"
+      ],
+      "correctAnswers": [
+        "Makalu",
+        "Gasherbrum I (Hidden Peak)",
+        "Gasherbrum II"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "Which of these peaks are eight-thousanders?",
+      "wrongAnswers": [
+        "Shispare",
+        "Yukshin Gardan Sar"
+      ],
+      "correctAnswers": [
+        "Cho Oyu",
+        "Annapurna I"
+      ]
+    },
+    {
+      "type": "multi",
+      "text": "Which of these peaks are eight-thousanders?",
+      "wrongAnswers": [
+        "Ngadi Chuli",
+        "Saltoro Kangri / K10",
+        "Saser Kangri I"
+      ],
+      "correctAnswers": [
+        "Dhaulagiri I"
+      ]
+    }
+  ]
+}

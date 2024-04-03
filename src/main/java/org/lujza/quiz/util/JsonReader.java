@@ -32,10 +32,10 @@ public class JsonReader {
      * Constructs a {@code JsonReader} with a specified directory path.
      * This directory is expected to contain JSON files that can be parsed into {@link Theme} objects.
      *
-     * @param filePath the path to the directory containing JSON files.
+     * @param dirPath the path to the directory containing JSON files.
      */
-    public JsonReader(String filePath) {
-        this.directory = new File(filePath);
+    public JsonReader(String dirPath) {
+        this.directory = new File(dirPath);
     }
 
     /**
