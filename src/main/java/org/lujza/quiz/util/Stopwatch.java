@@ -1,4 +1,4 @@
-package org.lujza.quiz.model;
+package org.lujza.quiz.util;
 
 /**
  * A {@code Stopwatch} class that implements a simple stopwatch functionality which can either count up from 0 or count down

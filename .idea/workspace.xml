@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Update README">
-      <change afterPath="$PROJECT_DIR$/unzipped/app/lib/app.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unzipped/app/lib/gson-2.8.9.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/quiz/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lujza/quiz/Quiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/quiz/model/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lujza/quiz/model/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/quiz/model/Theme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lujza/quiz/model/Theme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/quiz/util/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lujza/quiz/util/JsonReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/quiz/util/PointsCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lujza/quiz/util/PointsCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/lujza/quiz/util/Stopwatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lujza/quiz/util/Stopwatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unzipped/app/lib/app.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unzipped/app/lib/gson-2.8.9.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,30 +115,20 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.lujza" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.lujza.quiz.model" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Quiz">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Quiz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.lujza.quiz.Quiz" />
       <module name="Quiz.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.lujza.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Quiz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.lujza.quiz.model.Quiz" />
-      <module name="Quiz.app.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.lujza.quiz.model.*" />
+          <option name="PATTERN" value="org.lujza.quiz.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -187,7 +183,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Quiz" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.Quiz [javadoc]" />
         <item itemvalue="Gradle.Quiz [distZip]" />
       </list>

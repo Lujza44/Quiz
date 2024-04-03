@@ -1,4 +1,10 @@
-package org.lujza.quiz.model;
+package org.lujza.quiz;
+
+import org.lujza.quiz.model.Question;
+import org.lujza.quiz.model.Theme;
+import org.lujza.quiz.util.JsonReader;
+import org.lujza.quiz.util.PointsCounter;
+import org.lujza.quiz.util.Stopwatch;
 
 import java.io.IOException;
 import java.util.*;

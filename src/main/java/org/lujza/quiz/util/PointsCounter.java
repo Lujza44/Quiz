@@ -1,4 +1,7 @@
-package org.lujza.quiz.model;
+package org.lujza.quiz.util;
+
+import org.lujza.quiz.model.Question;
+import org.lujza.quiz.model.Theme;
 
 import java.util.HashSet;
 import java.util.Set;

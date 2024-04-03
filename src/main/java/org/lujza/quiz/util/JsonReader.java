@@ -1,4 +1,4 @@
-package org.lujza.quiz.model;
+package org.lujza.quiz.util;
 
 import java.io.File;
 import java.io.FileReader;
@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Objects;
 
 import com.google.gson.Gson;
+import org.lujza.quiz.model.Theme;
 
 /**
  * The {@code JsonReader} class is responsible for loading and parsing JSON files containing theme data for quizzes.
