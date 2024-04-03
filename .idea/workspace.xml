@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Update README" />
+    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Update README">
+      <change afterPath="$PROJECT_DIR$/unzipped/app/lib/app.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unzipped/app/lib/gson-2.8.9.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,27 +84,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "Gradle.Build Quiz.executor": "Run",
-    "Gradle.Quiz [distZip].executor": "Run",
-    "Gradle.Quiz [javadoc].executor": "Run",
-    "Gradle.Quiz:app [:app:App.main()].executor": "Run",
-    "Gradle.Quiz:app [:app:Main.main()].executor": "Run",
-    "Gradle.Quiz:app [:app:Quiz.main()].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/lujza/SKOLA/java/Quiz",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build Quiz.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Quiz [distZip].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Quiz [javadoc].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Quiz:app [:app:App.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Quiz:app [:app:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Quiz:app [:app:Quiz.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/lujza/SKOLA/java/Quiz&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.lujza" />
@@ -452,7 +457,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712052366074</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Update README">
+      <option name="closed" value="true" />
+      <created>1712052675077</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1712052675077</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -30,8 +30,8 @@ The project is organized into several Java classes, each with a specific role:
 
 ### Prerequisites
 
-- Java Development Kit (JDK) 21
-- Gradle (for building and running the application)
+- For building: Gradle (tested with version 8.6)
+- For running: Open JDK 21
 
 ### Building the Application
 
@@ -40,9 +40,18 @@ The project is organized into several Java classes, each with a specific role:
 3. Run the following command to build the application:
 
 ```shell
-gradle build
+./gradlew build
 ```
+### Running the Application
 
+Run the following commands to run the application:
+```
+mkdir unzipped
+cd unzipped
+unzip ../app/build/distributions/app.zip -d .
+cd app/bin
+./app
+```
 ## Input Data
 The input data for the quiz application primarily consists of JSON files containing the quiz questions, themes, and their respective details. Each theme's file includes a collection of questions, each question detailing its text, type (e.g., multiple-choice, text input), correct answers, and incorrect options. Themes are categorized by name and include a description and scoring guidelines, providing a structured format for easily updating or adding new content to the application.
 
