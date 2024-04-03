@@ -44,7 +44,7 @@ The project is organized into several Java classes, each with a specific role:
 ```
 ### Running the Application
 
-data na urovni bin a lib
+Directory `data` should be at the same level as directories `bin` and `lib`. The structure of the project should look like this:
 
 ```
 Quiz
@@ -58,13 +58,13 @@ Quiz
     └── Quiz.jar
 
 ```
-
 Run the following commands to run the application:
 ```
 unzip ../build/distributions/Quiz.zip -d .
 cd Quiz/bin
 ./Quiz
 ```
+
 ## Input Data
 The input data for the quiz application primarily consists of JSON files containing the quiz questions, themes, and their respective details. Each theme's file includes a collection of questions, each question detailing its text, type (e.g., multiple-choice, text input), correct answers, and incorrect options. Themes are categorized by name and include a description and scoring guidelines, providing a structured format for easily updating or adding new content to the application.
 
