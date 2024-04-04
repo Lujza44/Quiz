@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"org.lujza.quiz.util","l":"JsonReader"},{"p":"org.lujza.quiz.util","l":"PointsCounter"},{"p":"org.lujza.quiz.model","l":"Question"},{"p":"org.lujza.quiz","l":"Quiz"},{"p":"org.lujza.quiz.util","l":"Stopwatch"},{"p":"org.lujza.quiz.model","l":"Theme"}];updateSearchResults();
