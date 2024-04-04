@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Update README">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lujza/quiz/model/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lujza/quiz/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lujza/quiz/util/package-info.java" afterDir="false" />
+    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Update README and add package-info files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unzipped/Quiz/data/bioinf.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unzipped/Quiz/data/bioinf_alg.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unzipped/Quiz/data/latin.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unzipped/Quiz/data/morse.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unzipped/Quiz/data/mountains.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unzipped/Quiz/data/networking.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unzipped/Quiz/data/plants.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unzipped/Quiz/lib/Quiz.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unzipped/Quiz/lib/gson-2.8.9.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +78,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -120,7 +125,7 @@
       <recent name="org.lujza.quiz.model" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.Quiz [javadoc]">
     <configuration name="Quiz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.lujza.quiz.Quiz" />
       <module name="Quiz.main" />
@@ -135,8 +140,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Quiz [javadoc]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="javadoc" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Quiz [javadoc]" />
         <item itemvalue="Application.Quiz" />
       </list>
     </recent_temporary>
@@ -445,7 +473,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712157440031</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Update README and add package-info files">
+      <option name="closed" value="true" />
+      <created>1712214728984</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1712214728984</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -461,7 +497,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Update QuizPrep class" />
     <MESSAGE value="Update" />
     <MESSAGE value="Add new json files" />
     <MESSAGE value="Add evaluation of text and single choice questions" />
@@ -486,6 +521,7 @@
     <MESSAGE value="Update build.gradle and settings.gradle" />
     <MESSAGE value="Update project structure" />
     <MESSAGE value="Update README" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update README" />
+    <MESSAGE value="Update README and add package-info files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README and add package-info files" />
   </component>
 </project>
