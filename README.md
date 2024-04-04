@@ -17,16 +17,18 @@ For each question, users input their answers, and immediate feedback may be prov
 
 At the conclusion of the session, the application calculates the user's score based on the correctness of their answers, awards points, and presents a final grade. This grade reflects the user's performance across all questions, offering insight into their knowledge and areas that may require further revision.
 
-### Project Structure
+### Project organization
 
-The project is organized into several Java classes, each with a specific role:
+The project is organized into several Java classes, each with a specific role, in two packages:
 
-- `Quiz`: Manages the quiz flow, including mode selection, theme selection, providing questions and reading user's answers.
-- `JsonReader`: Handles loading and parsing of question data from JSON files.
-- `Theme`: Represents a theme - one set of questions.
-- `Question`: Represents a single question, including its text, answer choices, and correct answer(s).
-- `PointsCounter`: Tracks and calculates the user's points and final grade based on their answers.
-- `Stopwatch`: Manages the timing for test simulation mode, counting down the available time or tracking the elapsed time in practice mode.
+- package `model`:
+    - `Theme`: Represents a theme - one set of questions.
+    - `Question`: Represents a single question, including its text, answer choices, and correct answer(s).
+- package `util`:
+    - `Quiz`: Manages the quiz flow, including mode selection, theme selection, providing questions and reading user's answers.
+    - `JsonReader`: Handles loading and parsing of question data from JSON files.
+    - `PointsCounter`: Tracks and calculates the user's points and final grade based on their answers.
+    - `Stopwatch`: Manages the timing for test simulation mode, counting down the available time or tracking the elapsed time in practice mode.
 
 ### Prerequisites
 
@@ -44,7 +46,7 @@ The project is organized into several Java classes, each with a specific role:
 ```
 ### Running the Application
 
-Directory `data` should be at the same level as directories `bin` and `lib`. The structure of the project should look like this:
+Check the correct structure of the project. Directory `data` should be at the same level as directories `bin` and `lib`. The structure of the project should look like this:
 
 ```
 Quiz
