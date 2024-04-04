@@ -33,7 +33,7 @@ application {
 
 javadoc {
     source = sourceSets.main.allJava
-    destinationDir = file("$projectDir/app/build/docs/javadoc")
+    destinationDir = file("$projectDir/build/docs/javadoc")
     options.memberLevel = JavadocMemberLevel.PRIVATE
 //    options.author = true
 //    options.version = true
