@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Update README and add package-info files">
+    <list default="true" id="e7d02ad5-5e30-4df7-9a8e-5308bdba885e" name="Changes" comment="Update project structure">
+      <change afterPath="$PROJECT_DIR$/src/main/javadoc/overview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unzipped/Quiz/data/bioinf.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unzipped/Quiz/data/bioinf_alg.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unzipped/Quiz/data/latin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unzipped/Quiz/data/morse.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unzipped/Quiz/data/mountains.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unzipped/Quiz/data/networking.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unzipped/Quiz/data/plants.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unzipped/Quiz/lib/Quiz.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unzipped/Quiz/lib/gson-2.8.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lujza/quiz/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lujza/quiz/package-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,12 +62,25 @@
       <list>
         <option value="Class" />
         <option value="package-info" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Lujza44&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Lujza44/Quiz.git",
+    "accountId": "2ee53e09-cb21-4f4c-bae1-9192dc45149c"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -95,6 +102,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Gradle.Build Quiz.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Quiz [:Quiz.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Quiz [distZip].executor&quot;: &quot;Run&quot;,
@@ -168,13 +176,6 @@
         <item itemvalue="Application.Quiz" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-78a6f59c" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -481,7 +482,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712214728984</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Update project structure">
+      <option name="closed" value="true" />
+      <created>1712215502173</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1712215502173</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -519,9 +528,9 @@
     <MESSAGE value="Modify packages" />
     <MESSAGE value="Modify README" />
     <MESSAGE value="Update build.gradle and settings.gradle" />
-    <MESSAGE value="Update project structure" />
     <MESSAGE value="Update README" />
     <MESSAGE value="Update README and add package-info files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update README and add package-info files" />
+    <MESSAGE value="Update project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update project structure" />
   </component>
 </project>

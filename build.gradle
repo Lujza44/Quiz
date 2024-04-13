@@ -39,4 +39,6 @@ javadoc {
 //    options.version = true
 //    options.links("http://docs.oracle.com/javase/8/docs/api/")
     title = "Quiz javadoc"
+    options.overview = "src/main/javadoc/overview.html"
+
 }

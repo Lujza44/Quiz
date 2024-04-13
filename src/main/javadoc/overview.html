@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Design Overview</title>
+</head>
+<body>
+<h1>Program Design Overview</h1>
+<p>The quiz application is structured to be clear and organized, with different key classes handling specific parts of the application's overall functionality.</p>
+
+<h2>Key Classes and Their Roles</h2>
+
+<h3><code>Quiz</code> Class</h3>
+<ul>
+    <li><strong>Primary Role:</strong> Serves as the central controller of the application.</li>
+    <li><strong>Responsibilities:</strong> Manages the flow of the quiz, including setup, execution, and conclusion phases.</li>
+    <li><strong>Interactions:</strong>
+        <ul>
+            <li>Uses <code>JsonReader</code> to load questions and themes.</li>
+            <li>Communicates with <code>PointsCounter</code> to track and update scores.</li>
+            <li>Manages <code>Stopwatch</code> based on the selected mode for timing control.</li>
+        </ul>
+    </li>
+</ul>
+
+<h3><code>JsonReader</code> Class</h3>
+<ul>
+    <li><strong>Primary Role:</strong> Responsible for loading quiz data from external JSON files.</li>
+    <li><strong>Responsibilities:</strong> Parses JSON files to convert data into quiz themes and questions.</li>
+    <li><strong>Interactions:</strong> Called by the <code>Quiz</code> class during initialization to prepare data.</li>
+</ul>
+
+<h3><code>PointsCounter</code> Class</h3>
+<ul>
+    <li><strong>Primary Role:</strong> Manages scoring, including points for correct and partially correct answers.</li>
+    <li><strong>Responsibilities:</strong> Calculates total points and final grades based on performance.</li>
+    <li><strong>Interactions:</strong> Receives updates from <code>Quiz</code> as users answer questions.</li>
+</ul>
+
+<h3><code>Question</code> Class</h3>
+<ul>
+    <li><strong>Primary Role:</strong> Represents individual questions within the quiz.</li>
+    <li><strong>Responsibilities:</strong> Stores question text, answers, and metadata.</li>
+    <li><strong>Interactions:</strong> Used by <code>Quiz</code> to present questions and validate answers.</li>
+</ul>
+
+<h3><code>Theme</code> Class</h3>
+<ul>
+    <li><strong>Primary Role:</strong> Represents a collection of questions under a specific topic.</li>
+    <li><strong>Responsibilities:</strong> Holds details about the theme such as name and description.</li>
+    <li><strong>Interactions:</strong> Populated by <code>JsonReader</code> and used by <code>Quiz</code> to group questions.</li>
+</ul>
+
+<h3><code>Stopwatch</code> Class</h3>
+<ul>
+    <li><strong>Primary Role:</strong> Manages time for test simulations or tracks time for practice sessions.</li>
+    <li><strong>Responsibilities:</strong> Counts down or up depending on the mode.</li>
+    <li><strong>Interactions:</strong> Activated by the <code>Quiz</code> class to enforce time limits.</li>
+</ul>
+
+<h2>Overall Design</h2>
+<p>The design of the program is structured to facilitate easy navigation and interaction for the user, with clear paths from initialization through to completion. The modular nature of the classes allows for easy expansion or modification, such as adding new question types or alternative scoring mechanisms.</p>
+<p>Data-driven design (via <code>JsonReader</code> and JSON files) enables flexibility and ease of content update without needing to alter the program's codebase.</p>
+<p>Each class is designed to perform its tasks independently while maintaining a clear line of communication with other components, adhering to the principles of object-oriented programming. This separation ensures that maintenance and updates to one part of the application can be carried out with minimal impact on others.</p>
+<p>Overall, the application architecture is focused on providing a robust and flexible framework for quiz delivery and management, capable of adapting to various educational or training contexts.</p>
+</body>
+</html>
